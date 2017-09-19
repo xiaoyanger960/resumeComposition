@@ -1,0 +1,810 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>刘小倪(13588235393)-100度</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/sprite.css">
+    <link href="img/100du.ico" rel="shortcut icon" />
+    <script src="js/jquery-1.11.0.min.js"></script>
+   	<script src="js/tween.js"></script>
+   	<script src="js/toggleSearchBox.js"></script>
+   	<script src="js/slideUpdate.js"></script>
+    <script src="js/toggleTab.js"></script>
+    <script src="js/canlendarPrompt.js"></script>
+    <script src="js/changePhoto.js"></script>
+    <script src="js/grayMask.js"></script>
+    <script src="js/changeStyle.js"></script>
+</head>
+<body>
+<div class="wrap">
+    <div class="header">
+        <div class="change-city">
+            <span>切换城市：</span>
+            <ul>
+                <li class="current-city"><a href="##">北京</a></li>
+                <li><a href="##">上海</a></li>
+                <li><a href="##">福州</a></li>
+                <li><a href="##">广州</a></li>
+                <li><a href="##">青岛</a></li>
+            </ul>
+        </div>
+        <div class="header-right">
+            <a href="##">加盟100度</a><em>|</em>
+            <a href="##">店铺管理</a>
+        </div>
+
+    </div>
+    <div class="nav">
+    <div class="nav-left">
+    <ul>
+        <li><a href="##" class="food">美食</a></li>
+        <li><a href="##" class="pub">夜店</a></li>
+        <li><a href="##" class="shopping">购物</a></li>
+        <li><a href="##" class="culture">文化</a></li>
+        <li><a href="##" class="leisure">休闲</a></li>
+    </ul>
+
+    </div>
+    <div class="enjoy-logo">
+    </div>
+     <div class="nav-right">
+      <ul>
+        <li><a href="##" class="burn-space">烧客空间</a></li>
+        <li><a href="##" class="known">知道分子</a></li>
+        <li><a href="##" class="freeload">白吃白拿</a></li>
+        <li><a href="##" class="burn-forum">烧客论坛</a></li>
+        <li><a href="##" class="company-club">俱乐部</a></li>
+      </ul>
+    </div>
+
+    </div>
+    <div class="search">
+        <div class="search-nav">
+            <ul>
+                <li class="search-current">搜店</li>
+                <li class="no-search-current">地址</li>
+                <li class="no-search-current">优惠券</li>
+                <li class="no-search-current">全文</li>
+                <li class="no-search-current">视频</li>
+            </ul>
+        </div>
+        <div class="search-center">
+            <div class="search-part">
+                <input type="text" value="例如：......">
+                <input type="submit" value="">
+            </div>
+            <div class="recommend">
+                金钱豹、大江南、湘水之珠、德瑀楼<br>
+                荷棠鱼坊烤鱼、SOHO尚都、湘味楼...
+            </div>
+
+        </div>
+        <div class="update">
+        		<div class="search-wrap">
+        			<ul>
+        				<!--<li><a href="2013"><strong>萱萱</strong> <span>5分钟前</span> 写了一篇新文章：那些灿烂华美的瞬间…</a></li>-->
+        			</ul>
+        		</div>
+        		<a id="updateUpBtn" href="javascript:;" class="triangle_up"></a>
+        		<a id="updateDownBtn" href="javascript:;" class="triangle_down_red"></a>
+        	</div>
+    </div>
+    <div class="main">
+        <div class="main-left">
+            <div class="video-shop">
+                <div class="video">
+                 <h3>WHAT'HOT</h3>
+                    <video src="img/qiqi.mp4" controls="controls" poster="img/video-mainBg.png">您的浏览器不支持video</video>
+                    <ul>
+                        <li><a href="##">现场实录：杭州机场国航系统的崩溃</a></li>
+                        <li><a href="##">网友自拍国航航班晚点后的遭遇</a></li>
+                        <li><a href="##">【拍客】绝对最奢侈的航班 注意第14秒</a></li>
+                    </ul>
+                </div>
+                <div class="shop">
+                    <div class="shop-header">
+                        <ul>
+                            <li class="active"><span>HOT SHOP</span> 红店铺 <em></em></li>
+                            <li><span>EW SHOP</span> 新开张 <em></em></li>
+                        </ul>
+                    </div>
+                    <div class="shop-content">
+                        <ol>
+                            <li>
+                                <img src="img/shop-img.png" alt="烤鸭">
+                                <span></span>
+                                <div class="shop-info">
+                                    <h5>御舟和涵珍园国际酒店</h5>
+                                    <p>区域省：朝阳/CBD</p>
+                                    <p>人均：180元</p>
+                                    <p>人气：12321</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="img/shop-img.png" alt="烤鸭">
+                                <div class="shop-info">
+                                    <h5>御舟和涵珍园国际酒店</h5>
+                                    <p>区域省：朝阳/CBD</p>
+                                    <p>人均：180元</p>
+                                    <p>人气：12321</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="img/shop-img.png" alt="烤鸭">
+                                <div class="shop-info">
+                                    <h5>御舟和涵珍园国际酒店</h5>
+                                    <p>区域省：朝阳/CBD</p>
+                                    <p>人均：180元</p>
+                                    <p>人气：12321</p>
+                                </div>
+                            </li>
+                        </ol>
+                        <ol>
+                            <li>
+                                <img src="img/shop-img2.png" alt="烤鸭">
+                                <span></span>
+                                <div class="shop-info">
+                                    <h5>御舟和涵珍园国际酒店</h5>
+                                    <p>区域省：朝阳/CBD</p>
+                                    <p>人均：180元</p>
+                                    <p>人气：12321</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="img/shop-img2.png" alt="烤鸭">
+                                <div class="shop-info">
+                                    <h5>御舟和涵珍园国际酒店</h5>
+                                    <p>区域省：朝阳/CBD</p>
+                                    <p>人均：180元</p>
+                                    <p>人气：12321</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="img/shop-img2.png" alt="烤鸭">
+                                <div class="shop-info">
+                                    <h5>御舟和涵珍园国际酒店</h5>
+                                    <p>区域省：朝阳/CBD</p>
+                                    <p>人均：180元</p>
+                                    <p>人气：12321</p>
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+                    <p class="more"><a href="##">more</a></p>
+                </div>
+            </div>
+            <div class="ipod">
+            </div>
+            <div class="lucky-recommend">
+                <div class="lucky">
+                    <div class="lucky-header">
+                        <div class="lucky-header-left">
+                            <span>LUCKY　YODAY</span>
+                            <h2>每日活动</h2>
+                        </div>
+                        <h1>2014.2</h1>
+                    </div>
+                    <div class="lucky-center">
+                        <div class="lucky-center-left"></div>
+                        <div class="lucky-center-right">
+                            <a href="##"><em></em><em></em>本日主题XXXXXXX</a>
+                            <p>真皮坡跟裸靴,采用了优质的磨砂牛皮，柔软顺滑的皮质让人用手感觉到如丝被般的细滑，是时尚健康的最佳选择</p>
+                        </div>
+
+                    </div>
+                    <div class="lucky-bottom">
+                        <div class="lucky-bottom-header">
+                            <ol>
+                                <li>MON</li>
+                                <li>TUE</li>
+                                <li>WED</li>
+                                <li>THU</li>
+                                <li>FRI</li>
+                                <li>SAT</li>
+                                <li>SYN</li>
+                            </ol>
+                        </div>
+                        <div class="lucky-bottom-center">
+                            <ul>
+                                <li>29</li>
+                                <li>30</li>
+                                <li>1</li>
+                                <li>2</li>
+                                <li>3</li>
+                                <li>4</li>
+                                <li>5</li>
+                                <li>6</li>
+                                <li>7</li>
+                                <li>8</li>
+                                <li>9</li>
+                                <li>10</li>
+                                <li>11</li>
+                                <li>12</li>
+                                <li>13</li>
+                                <li>14</li>
+                                <li>15</li>
+                                <li>16</li>
+                                <li>17</li>
+                                <li>18</li>
+                                <li>19</li>
+                                <li>20</li>
+                                <li class="img" info="这是公主的小鞋子，很可爱啊"></li>
+                                <li>22</li>
+                                <li>23</li>
+                                <li>24</li>
+                                <li class="img" info="居家用的简易衣架，时尚又实惠"></li>
+                                <li>26</li>
+                                <li class="img" info="野外旅行背包 容量大 "></li>
+                                <li>28</li>
+                                <li class="img" info="奇特茶壶 有创意的生活 "></li>
+                                <li class="img" info="你是近视眼吗 一定要带一副眼镜 "></li>
+                                <li>31</li>
+                                <li>1</li>
+                                <li>2</li>
+                                <li>3</li>
+                                <li>4</li>
+                                <li>5</li>
+                                <li>6</li>
+                                <li>7</li>
+                                <li>8</li>
+                                <li>9</li>
+                            </ul>
+                            <div class="prompt">
+                                <p class="prompt-left"></p>
+                                <div class="prompt-right">
+                                    <div class="prompt-right-top">
+                                        <h5>MON</h5><span>本日主题XXXXXXX</span>
+                                    </div>
+                                    <div class="prompt-right-bottom">
+                                        这款鞋子真的很好卖这款鞋子真的很好卖
+                                    </div>
+                                    <a href="##"></a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="recommend">
+                    <div class="recommend-header">
+                        <span>RECOMMEND</span>
+                        <h3>精彩推荐</h3>
+                    </div>
+                    <div class="change-photo pic" id="change-photo" >
+                        <ul>
+                            <li><a href="##"><img src="img/recommend01.png" alt="风景1"></a></li>
+                            <li><a href="##"><img src="img/recommend02.png" alt="风景2"></a></li>
+                            <li><a href="##"><img src="img/recommend03.png" alt="风景3"></a></li>
+                        </ul>
+                        <ol>
+                            <li class="change-active"><a href="javascript:;"><img src="img/recSmall01.png" alt="小风景01"></a></li>
+                            <li><a href="##"><img src="img/recSmall02.png" alt="小风景02"></a></li>
+                            <li><a href="##"><img src="img/recSmall03.png" alt="小风景03"></a></li>
+                        </ol>
+                        <p>这是海边的一个旅游胜地</p>
+                    </div>
+                    <ul>
+                        <li class="shoppingcar"><a href="##">老店换新颜，丰泽园野田重张亮相<span>08/07/22</span></a></li>
+                        <li class="file"><a href="##">老店换新颜，丰泽园野田重张亮相<span>08/07/22</span></a></li>
+                        <li class="shoppingcar"><a href="##">老店换新颜，丰泽园野田重张亮相<span>08/07/22</span></a></li>
+                        <li  class="file"><a href="##">老店换新颜，丰泽园野田重张亮相<span>08/07/22</span></a></li>
+                        <li class="shoppingcar"><a href="##">老店换新颜，丰泽园野田重张亮相<span>08/07/22</span></a></li>
+                        <li  class="file"><a href="##">老店换新颜，丰泽园野田重张亮相<span>08/07/22</span></a></li>
+                        <li class="shoppingcar"><a href="##">老店换新颜，丰泽园野田重张亮相<span>08/07/22</span></a></li>
+                        <li class="shoppingcar"><a href="##">老店换新颜，丰泽园野田重张亮相<span>08/07/22</span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subway-bbs">
+                <div class="subway">
+                    <div class="subway-header">
+                        <ul>
+                            <li class="subway-active"><span>SUBWAY</span> 地铁交通<em></em></li>
+                            <li><span>MAP</span> 生活圈<em></em></li>
+                        </ul>
+                    </div>
+                    <div class="subway-content">
+                        <ul>
+                            <li><img src="img/subway.png" alt="13号地铁"></li>
+                            <li><a href="##"></a></li>
+                            <li><a href="##"></a></li>
+                            <li><a href="##"></a></li>
+                            <li><a href="##"></a></li>
+                            <li><a href="##"></a></li>
+                        </ul>
+                        <ul>
+                            <li><img src="img/life.png" alt="13号地铁"></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="bbs">
+                    <div class="bbs-header">
+                        <h5>BBS <span>论坛</span></h5>
+                        <p><a href="##">more</a></p>
+                    </div>
+                    <div class="bbs-content">
+                        <ul>
+                            <li class="bbs-active"><em>01</em>
+                                <img src="img/bbsImg.png" alt="阿瑞斯">
+                                保你没见过的古怪餐厅
+                                <strong>阿瑞斯</strong>
+                                <span>世说新语</span>
+                                <i>ONE</i>
+                            </li>
+                            <li ><em>02</em>
+                                <img src="img/bbsImg.png" alt="阿瑞斯">
+                                世上最感动人的歌
+                                <strong>信</strong>
+                                <span>离歌</span>
+                                <i>TWO</i>
+                            </li>
+                            <li ><em>03</em>
+                                <img src="img/bbsImg.png" alt="阿瑞斯">
+                                那些稀奇古怪的事情
+                                <strong>大鱼海棠</strong>
+                                <span>动画</span>
+                                <i>THREE</i>
+                            </li>
+                            <li ><em>04</em>
+                                <img src="img/bbsImg.png" alt="阿瑞斯">
+                                头发最长的世界吉尼斯记录
+                                <strong>泰夫</strong>
+                                <span>头撞玻璃</span>
+                                <i>FOUR</i>
+                            </li>
+                            <li ><em>05</em>
+                                <img src="img/bbsImg.png" alt="阿瑞斯">
+                                奥运会的跳水冠军田亮
+                                <strong>拍电影</strong>
+                                <span>爸爸去哪儿</span>
+                                <i>FIVE</i>
+                            </li>
+                            <li><em>06</em>
+                                <img src="img/bbsImg.png" alt="阿瑞斯">
+                                举办大学生运动会
+                                <strong>体育盛宴</strong>
+                                <span>体育馆</span>
+                                <i>SIX</i>
+                            </li>
+                            <li><em>07</em>
+                                <img src="img/bbsImg.png" alt="阿瑞斯">
+                                最快的出行方式
+                                <strong>乘坐宇宙飞船</strong>
+                                <span>航行</span>
+                                <i>SEVEN</i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <div class="ipod">
+
+            </div>
+            <div class="advice-people">
+                <div class="advice">
+                    <div class="advice-header">
+                        <h5> <span>LIFESTYLE ADVICE</span>知道分子</h5>
+                        <p><a href="##">more</a></p>
+                    </div>
+                    <div class="advice-nav">
+                        <ul>
+                            <li class="advice-active">有人在问 <em></em></li>
+                            <li>有人知道 <em></em></li>
+                            <li>热门问题 <em></em></li>
+                        </ul>
+                    </div>
+                    <advice class="advice-content">
+                        <ul>
+                            <li> <h5>标题</h5> <h6>状态</h6></li>
+                            <li><span>[<i>美食</i>]</span> 推荐几款性价比比较好的冰箱... <em></em></li>
+                            <li><span>[<i>购物</i>]</span> 生活中哪些商品的包装有缺陷 <em></em></li>
+                            <li><span>[<i>休闲</i>]</span> 为什么我第一次进入保姆和宠物 <em></em></li>
+                            <li><span>[<i>美食</i>]</span> 推荐几款性价比比较好的冰箱... <em></em></li>
+                            <li><span>[<i>购物</i>]</span> 有哪些好友而实惠的化妆品.. <em></em></li>
+                        </ul>
+                        <ul>
+                            <li> <h5>标题</h5> <h6>状态</h6></li>
+                            <li><span>[<i>美食</i>]</span> 天天都去点外卖... <em></em></li>
+                            <li><span>[<i>购物</i>]</span> 哪里能买到物美价廉的东西 <em></em></li>
+                            <li><span>[<i>休闲</i>]</span> 天天逛街不觉得累 <em></em></li>
+                            <li><span>[<i>美食</i>]</span> 推荐几款性价比比较好的冰箱... <em></em></li>
+                            <li><span>[<i>购物</i>]</span> 有哪些好友而实惠的化妆品.. <em></em></li>
+                        </ul>
+                        <ul>
+                            <li> <h5>标题</h5> <h6>状态</h6></li>
+                            <li><span>[<i>购物</i>]</span>屈臣氏的化妆品是正品吗<em></em></li>
+                            <li><span>[<i>购物</i>]</span> 教你购物小技巧<em></em></li>
+                            <li><span>[<i>休闲</i>]</span> 天天逛街不觉得累 <em></em></li>
+                            <li><span>[<i>美食</i>]</span> 推荐几款性价比比较好的冰箱... <em></em></li>
+                            <li><span>[<i>购物</i>]</span> 不要买到过期的食物 <em></em></li>
+                        </ul>
+                    </advice>
+                    <div class="advice-search">
+                        <label for="ad-search">搜搜谁知道:</label>
+                        <input type="text" placeholder="请输入关键字" id="ad-search">
+                        <input type="submit" value="">
+                    </div>
+                </div>
+                <div class="people">
+                    <div class="people-header">
+                        <h5> <span>HOT</span>红人烧客</h5>
+                        <p><a href="##">more</a></p>
+                    </div>
+                    <div class="people-content">
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="help-media">
+                <div class="help">
+                    <div class="help-header">
+                        <h5> <span>HELP</span>在线帮助</h5>
+                    </div>
+                    <div class="help-top">
+                        <p>您有任何问题，都可以通过全国免费电话，或在MSN在线客服与我们联系</p>
+                        <div class="help-phone">4006-100-516</div>
+                        <div class="help-email">100du.com@live.cn</div>
+                    </div>
+                    <div class="help-bottom">
+                        <div class="help-bottom-header">
+                            <h6>用户帮助</h6>
+                            <h6>商户帮助</h6>
+                        </div>
+                        <ul class="user-help">
+                            <li><a href="##">金币是什么</a></li>
+                            <li><a href="##">怎样查看我的等级</a></li>
+                            <li><a href="##">怎么赚积分</a></li>
+                        </ul>
+                        <ul class="business-help">
+                            <li><a href="##">如何成为明星商户</a></li>
+                            <li><a href="##">邮件推广</a></li>
+                            <li><a href="##">论坛推广方法</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="media">
+                    <div class="media-header">
+                        <h5> <span>100DU IN THE MEDIA</span>媒体声音</h5>
+                        <p><a href="##">more</a></p>
+                    </div>
+                    <div class="media-content">
+                        <ul>
+                            <li><a href="##">日本最大的财经杂志《砖石周刊》对100度享乐网的报道</a></li>
+                            <li><a href="##">视频网站100度享乐网获网络视听许可证</a></li>
+                            <li><a href="##">互联网上的视频橱窗</a></li>
+                            <li><a href="##">享乐主义的机会</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="main-right">
+            <div class="login">
+                <div class="login-header">
+                    <h5>LOAD <span>登录</span></h5>
+                </div>
+                <div class="login-center">
+                    <form action="">
+                        <p>  <label for="username">用户名：</label>
+                            <input type="text" id="username">
+                            <b>
+                                <input type="checkbox"> <em>记住我</em>
+                            </b>
+                        </p>
+                        <p>
+                            <label for="password">密码：</label>
+                            <input type="password" id="password">
+                            <input type="submit" value=" ">
+                        </p>
+                    </form>
+                </div>
+                <div class="login-bottom">
+                    <ul>
+                        <li><a href="##">新用户注册</a></li>
+                        <li><a href="##">忘记密码了</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="wheel">
+
+            </div>
+            <div class="windows">
+
+            </div>
+            <div class="coupons">
+                <div class="coupons-header">
+                    <h5> <span>CONPONS</span> 抢券儿</h5>
+                    <p><a href="##">more</a></p>
+                </div>
+                <div class="coupons-nav">
+                    <ul>
+                        <li class="coupons-active"><a href="##">人气<em></em></a></li>
+                        <li><a href="##">推荐<em></em></a></li>
+                        <li><a href="##">最新<em></em></a></li>
+                    </ul>
+                </div>
+                <div class="coupons-content">
+                    <ul>
+                        <li>
+                            <div class="coupons-content-header">
+                            <h6>商品名</h6><h6>省</h6><h6>打印</h6>
+                            </div>
+                        </li>
+                        <li><a href="##">老北京一尊皇牛<em>345</em><span>12%</span></a></li>
+                        <li><a href="##">老北京一尊皇牛<em>345</em><span>12%</span></a></li>
+                        <li><a href="##">老北京一尊皇牛<em>345</em><span>12%</span></a></li>
+                        <li><a href="##">老北京一尊皇牛<em>345</em><span>12%</span></a></li>
+                        <li><a href="##">老北京一尊皇牛<em>345</em><span>12%</span></a></li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <div class="coupons-content-header">
+                                <h6>商品名</h6><h6>省</h6><h6>打印</h6>
+                            </div>
+                        </li>
+                        <li><a href="##">杭州-东坡肉<em>67</em><span>55%</span></a></li>
+                        <li><a href="##">杭州-东坡肉<em>67</em><span>55%</span></a></li>
+                        <li><a href="##">杭州-东坡肉<em>67</em><span>55%</span></a></li>
+                        <li><a href="##">杭州-东坡肉<em>67</em><span>55%</span></a></li>
+                        <li><a href="##">杭州-东坡肉<em>67</em><span>55%</span></a></li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <div class="coupons-content-header">
+                                <h6>商品名</h6><h6>省</h6><h6>打印</h6>
+                            </div>
+                        </li>
+                        <li><a href="##">重庆-麻辣火锅<em>158</em><span>99%</span></a></li>
+                        <li><a href="##">重庆-麻辣火锅<em>158</em><span>99%</span></a></li>
+                        <li><a href="##">重庆-麻辣火锅<em>158</em><span>99%</span></a></li>
+                        <li><a href="##">重庆-麻辣火锅<em>158</em><span>99%</span></a></li>
+                        <li><a href="##">重庆-麻辣火锅<em>158</em><span>99%</span></a></li>
+                    </ul>
+
+                </div>
+
+            </div>
+            <div class="todayShop">
+                <div class="todayShop-header">
+                    <h5> <span>SHOP</span> 今日推荐</h5>
+                    <p><a href="##">more</a></p>
+                </div>
+                <div class="todayShop-content">
+                    <ul>
+                        <li>
+                            <a href="##">
+                                <div class="left-shop">
+
+                                </div>
+                                <div class="right-shop">
+                                    <h6>汉莱国际美食白汇</h6>
+                                    <p> <span>口味：</span>创意中餐</p>
+                                    <p> <span>区域：</span>朝阳/CBD</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="##">
+                                <div class="left-shop">
+
+                                </div>
+                                <div class="right-shop">
+                                    <h6>汉莱国际美食白汇</h6>
+                                    <p> <span>口味：</span>创意中餐</p>
+                                    <p> <span>区域：</span>朝阳/CBD</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="##">
+                                <div class="left-shop">
+
+                                </div>
+                                <div class="right-shop">
+                                    <h6>汉莱国际美食白汇</h6>
+                                    <p> <span>口味：</span>创意中餐</p>
+                                    <p> <span>区域：</span>朝阳/CBD</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="##">
+                                <div class="left-shop">
+
+                                </div>
+                                <div class="right-shop">
+                                    <h6>汉莱国际美食白汇</h6>
+                                    <p> <span>口味：</span>创意中餐</p>
+                                    <p> <span>区域：</span>朝阳/CBD</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="Shop360">
+                <div class="Shop360-header">
+                    <h5> <span>360 <sub>。</sub></span>全景逛店</h5>
+                    <p><a href="##">more</a></p>
+                </div>
+                <div class="Shop360-centent">
+                    <img src="img/shop360.png" alt="全景图片">
+                    苹果雪梨排骨汤
+                </div>
+            </div>
+            <div class="discount">
+                <div class="discount-header">
+                    <h5> <span>SHOP</span>折扣店</h5>
+                    <p><a href="##">more</a></p>
+                </div>
+                <a class="discount-center" href="##">
+                    <div class="left-shop">
+                    </div>
+                    <div class="right-shop">
+                        <h6>汉莱国际美食白汇</h6>
+                        <p> <span>口味：</span>创意中餐</p>
+                        <p> <span>区域：</span>朝阳/CBD</p>
+                    </div>
+                </a>
+                <div class="discount-bottom">
+                    <ul>
+                        <li><a href="##"> <span>[<em>休闲</em>]</span>瀚茶缘(雍和宫店)</a></li>
+                        <li><a href="##"> <span>[<em>休闲</em>]</span>滑冰</a></li>
+                        <li><a href="##"> <span>[<em>美食</em>]</span>北京烤鸭</a></li>
+                        <li><a href="##"> <span>[<em>购物</em>]</span>银泰七夕大折扣</a></li>
+                        <li><a href="##"> <span>[<em>美食</em>]</span>龙湖天街海鲜自助餐厅</a></li>
+                        <li><a href="##"> <span>[<em>购物</em>]</span>物美超市营业</a></li>
+                        <li><a href="##"> <span>[<em>休闲</em>]</span>自助摄影</a></li>
+                        <li><a href="##"> <span>[<em>休闲</em>]</span>DIY陶瓷手工艺</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="newJoin">
+                <div class="newJoin-header">
+                    <h5> <span>COUPONS</span>最新加盟</h5>
+                    <p><a href="##">more</a></p>
+                </div>
+                <div class="newJoin-center">
+                    <a href="##" class="newJoin-left">
+                        <h6>汉莱国际美食百汇</h6>
+                        <p> <span>口味：</span>创意中餐</p>
+                        <p> <span>区域：</span>朝阳/CBD</p>
+                    </a>
+                    <a href="##" class="newJoin-right">
+                        <h6>汉莱国际美食百汇</h6>
+                        <p> <span>口味：</span>创意中餐</p>
+                        <p> <span>区域：</span>朝阳/CBD</p>
+                    </a>
+
+                </div>
+                <div class="newJoin-bottom">
+                    <ul>
+                        <li><a href="##"> <span>[<em>休闲</em>]</span>瀚茶缘(雍和宫店)</a></li>
+                        <li><a href="##"> <span>[<em>休闲</em>]</span>滑冰</a></li>
+                        <li><a href="##"> <span>[<em>美食</em>]</span>北京烤鸭</a></li>
+                        <li><a href="##"> <span>[<em>购物</em>]</span>银泰七夕大折扣</a></li>
+                        <li><a href="##"> <span>[<em>美食</em>]</span>龙湖天街海鲜自助餐厅</a></li>
+                        <li><a href="##"> <span>[<em>购物</em>]</span>物美超市营业</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <ul>
+            <li><a href="##">关于我们<em>|</em></a></li>
+            <li><a href="##">联系我们<em>|</em></a></li>
+            <li><a href="##">版权声明<em>|</em></a></li>
+            <li><a href="##">加入我们<em>|</em></a></li>
+            <li><a href="##">问题反馈<em>|</em></a></li>
+            <li><a href="##">友情链接<em>|</em></a></li>
+            <li><a href="##">网站地图<em>|</em></a></li>
+            <li><a href="##">视频索引<em>|</em></a></li>
+        </ul>
+        <p>Copyeight &copy;2008 www.100du.com  100度乐享网 版权所有 京ICP证070374</p>
+    </div>
+   
+
+</div>
+</body>
+</html>
+<script>
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

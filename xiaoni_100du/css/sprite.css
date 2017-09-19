@@ -1,0 +1,142 @@
+.food{
+    background: url(../img/navBtnLeft.png) no-repeat -19px 0 ;
+}
+.pub{
+    background: url(../img/navBtnLeft.png) no-repeat -85px 0 ;
+}
+.shopping{
+    background: url(../img/navBtnLeft.png) no-repeat -152px 0;
+}
+.culture{
+    background: url(../img/navBtnLeft.png) no-repeat -218px 0 ;
+}
+.leisure{
+    background: url(../img/navBtnLeft.png) no-repeat -285px 0;
+}
+.burn-space{
+    background: url(../img/navBtnRight.png) no-repeat -5px 0 ;
+}
+.known{
+    background: url(../img/navBtnRight.png) no-repeat -71px 0;
+}
+.freeload{
+    background: url(../img/navBtnRight.png) no-repeat -138px 0 ;
+}
+.burn-forum{
+    background: url(../img/navBtnRight.png) no-repeat -203px 0;
+}
+.company-club{
+    background: url(../img/navBtnRight.png) no-repeat -269px 0 ;
+}
+.nav .nav-left ul li:first-child a:hover{
+    background: url(../img/navBtnLeftHover.png) no-repeat -20px 0;
+}
+.nav .nav-left ul li:nth-child(2) a:hover{
+    background: url(../img/navBtnLeftHover.png) no-repeat -86px 0;
+}
+.nav .nav-left ul li:nth-child(3) a:hover{
+    background: url(../img/navBtnLeftHover.png) no-repeat -151px 0;
+}
+.nav .nav-left ul li:nth-child(4) a:hover{
+    background: url(../img/navBtnLeftHover.png) no-repeat -217px 0;
+}
+.nav .nav-left ul li:last-child a:hover{
+    background: url(../img/navBtnLeftHover.png) no-repeat -283px 0;
+}
+.nav .nav-right ul li:first-child a:hover{
+    background: url(../img/navBtnRightHover.png) no-repeat -5px 0;
+}
+.nav .nav-right ul li:nth-child(2) a:hover{
+    background: url(../img/navBtnRightHover.png) no-repeat -72px 0;
+}
+.nav .nav-right ul li:nth-child(3) a:hover{
+    background: url(../img/navBtnRightHover.png) no-repeat -137px 0;
+}
+.nav .nav-right ul li:nth-child(4) a:hover{
+    background: url(../img/navBtnRightHover.png) no-repeat -204px 0;
+}
+.nav .nav-right ul li:nth-child(5) a:hover{
+    background: url(../img/navBtnRightHover.png) no-repeat -269px 0;
+}
+.main .main-left .lucky-recommend .recommend ul li:nth-child(odd){
+    background: url(../img/shopingCar.png) no-repeat 0 0 ;
+}
+.main .main-left .lucky-recommend .recommend ul li:nth-child(even){
+    background: url(../img/file.png) no-repeat 0 0 ;
+
+}
+
+.main .main-left  .subway-bbs .subway .subway-content ul li:nth-child(2) a{
+    background: url(../img/subway01.png) no-repeat 0 0 ;
+}
+.main .main-left  .subway-bbs .subway .subway-content ul li:nth-child(3) a{
+    background: url(../img/subway02.png) no-repeat 0 0 ;
+}
+.main .main-left  .subway-bbs .subway .subway-content ul li:nth-child(4) a{
+    background: url(../img/subway03.png) no-repeat 0 0 ;
+}
+.main .main-left  .subway-bbs .subway .subway-content ul li:nth-child(5) a{
+    background: url(../img/subway04.png) no-repeat 0 0 ;
+}
+.main .main-left  .subway-bbs .subway .subway-content ul li:nth-child(6) a{
+    background: url(../img/subway05.png) no-repeat 0 0 ;
+}
+.main .main-left .advice-people .advice .advice-content ul li:nth-child(2) em,
+.main .main-left .advice-people .advice .advice-content ul li:nth-child(4) em{
+    background: url(../img/greenPack.png) no-repeat 0 0;
+}
+.main .main-left .advice-people .advice .advice-content ul li:nth-child(3) em,
+.main .main-left .advice-people .advice .advice-content ul li:nth-child(5) em,
+.main .main-left .advice-people .advice .advice-content ul li:nth-child(6) em{
+    background: url(../img/redFlag.png) no-repeat 0 0;
+}
+
+
+.main .main-left .advice-people .people .people-content ul li:nth-child(1){
+    background: url(../img/redMan.png) no-repeat 0 0 ;
+}
+.main .main-left .advice-people .people .people-content ul li:nth-child(2){
+    background: url(../img/redMan01.png) no-repeat 0 0 ;
+}
+.main .main-left .advice-people .people .people-content ul li:nth-child(3){
+    background: url(../img/redMan02.png) no-repeat 0 0 ;
+}
+.main .main-left .advice-people .people .people-content ul li:nth-child(4){
+    background: url(../img/redMan03.png) no-repeat 0 0 ;
+}
+.main .main-left .advice-people .people .people-content ul li:nth-child(5){
+    background: url(../img/redMan04.png) no-repeat 0 0 ;
+}
+.main .main-left .advice-people .people .people-content ul li:nth-child(6){
+    background: url(../img/redMan05.png) no-repeat 0 0 ;
+}
+.main .main-left .advice-people .people .people-content ul li:nth-child(7){
+    background: url(../img/redMan06.png) no-repeat 0 0 ;
+}
+.main .main-left .advice-people .people .people-content ul li:nth-child(8){
+    background: url(../img/redMan07.png) no-repeat 0 0 ;
+}
+.main .main-left .advice-people .people .people-content ul li:nth-child(9){
+    background: url(../img/redMan08.png) no-repeat 0 0 ;
+}
+.main .main-left .advice-people .people .people-content ul li:nth-child(10){
+    background: url(../img/redMan09.png) no-repeat 0 0 ;
+}
+.main .main-left .advice-people .people .people-content ul li:nth-child(11){
+    background: url(../img/redMan10.png) no-repeat 0 0 ;
+}
+
+
+.main .main-left .help-media .media .media-content ul li:nth-child(1) a{
+    background: url(../img/media01.png) no-repeat 0 0 ;
+}
+.main .main-left .help-media .media .media-content ul li:nth-child(2) a{
+    background: url(../img/media02.png) no-repeat 0 0 ;
+}
+.main .main-left .help-media .media .media-content ul li:nth-child(3) a{
+    background: url(../img/media03.png) no-repeat 0 0 ;
+}
+.main .main-left .help-media .media .media-content ul li:nth-child(4) a{
+    background: url(../img/media04.png) no-repeat 0 0 ;
+}
+
