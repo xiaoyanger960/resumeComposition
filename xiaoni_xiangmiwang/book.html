@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>乡觅预定中心</title>
+    <link rel="stylesheet" type="text/css" href="book.css">
+    <script src="http://libs.baidu.com/jquery/1.4.2/jquery.min.js"></script>
+</head>
+<body>
+<!--绿色公共头部-->
+<header id="header">
+    <!--网站宗旨-->
+    <div class="header lf" class="wangzhanbiaoyu">
+        <a href="index.html" >乡觅网，带您寻找美好的乡村之旅</a>
+    </div>
+    <!--搜索框-->
+    <div class="search lf">
+        <input type="search" name="search" placeholder="&nbsp&nbsp搜索您向往的美丽乡村">
+        <a href="#">
+            <img src="images/search.jpg">
+        </a>
+    </div>
+    <!--登录与注册-->
+    <a  href="personal.html" class="log white lf"
+        style="width: 40px; height: 40px;border-radius: 50%;overflow: hidden;">
+        <img src="personalimages/usertu_09.jpg" style="width: 35px; height: 35px;border-radius: 50%;">
+    </a>
+    <a href="#" class="reg white lf">已登录</a>
+</header>
+<!--导航栏-->
+<div class="nav">
+    <!--导航名称-->
+    <div class="nav1">
+        <ul>
+            <li ><a href="index.html" class="first">乡觅首页</a></li>
+            <li><a href="viewplay" target="_self">景点玩乐</a></li>
+            <li><a href="xinwen.html" target="_self">新闻资讯</a></li>
+            <li><a href="festi.html" target="_self">民俗节日</a></li>
+            <li><a href="commu.html" target="_self">乡觅社区</a></li>
+            <li><a href="book.html" target="_self" style="color: #7702ba;">预定中心</a></li>
+            <li><a href="personal.html" target="_self">个人主页</a></li>
+        </ul>
+    </div>
+    <!--导航装饰三角号-->
+    <!--<div class="sanjiao1">
+        <div class="tri1"> </div>
+        <div class="line1"> </div>
+        <div class="line1">  </div>
+    </div>-->
+</div>
+<!--banner图片-->
+<div class="banner">
+<img src="bookimages/banner_01.jpg">
+    <a href="book_kezhan.html" class="link1" target="bookcenterframe">客栈</a>
+    <a href="book_meishi.html" class="link2" target="bookcenterframe">美食</a>
+    <a href="book_techan.html" class="link3" target="bookcenterframe">特产</a>
+</div>
+<!--热门推荐模块-->
+<div class="remeng">
+    <h4>热门推荐</h4>
+    <div class="remengleft">
+        <img src="bookimages/box_011.jpg">
+    </div>
+    <div class="remengleft">
+        <img src="bookimages/box_012.jpg">
+    </div>
+    <div class="remengright">
+        <img src="bookimages/box_02.jpg">
+        <img src="bookimages/box_03.jpg">
+    </div>
+</div>
+<!--右边栏目-->
+<div class="bookcenter">
+    <iframe src="book_kezhan.html"name="bookcenterframe" frameborder="0"  scrolling="no"></iframe>
+</div>
+<!--页脚-->
+<footer class="footer">
+    <div class="footer_top">
+        <ul>
+            <li>
+                <a href="#">客户热线</a>
+                <img class="hao" src="images/phone.png">
+                <div class="lianxi">151-8587-5002<div>
+            </li>
+            <li><b></b>
+                <a href="#">关注我们</a>
+                <img class="hao1" src="images/wechat.png">
+                <img class="hao2" src="images/erweima.png">
+                <div class="lianxi1">微信公众号</div>
+            </li>
+            <li><b></b>
+                <a href="#">在线咨询</a>
+                <img class="hao" src="images/qqlogo.png">
+                <div class="lianxi2">2247312625</div>
+            </li>
+        </ul>
+    </div>
+    <div class="footer_bottom">
+        友情链接：
+        <a href="#">中国美丽乡村网</a>
+        <a href="#">携程</a>
+        <a href="http://www.cthy.com/">中国旅游信息网</a>
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        <a href="#">出游必备</a>&nbsp&nbsp<a href="#">安全事项</a>
+        <br>
+        COPYRIGHT  &copyright 2017 杭州电子科技大学数字媒体与艺术设计学院 浙 ICP备12022451号-1
+    </div>
+
+</footer>
+<div class="_top">
+    TOP
+</div><script>
+    $(function() {
+        $(window).scroll(function() {
+            var _top = $(window).scrollTop();
+            if (_top > 300) {
+                $('._top').fadeIn(600);
+            } else {
+                $('._top').fadeOut(600);
+            }
+        });
+        $("._top").click(function() {
+            $("html,body").animate({
+                scrollTop: 0
+            }, 500);
+        });
+    });</script>
+</body>
+</html>

@@ -1,0 +1,181 @@
+/*通用样式*/
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+::-webkit-scrollbar
+{
+    width: 7px;
+    height: 16px;
+    background-color: #F5F5F5;
+}
+
+/*定义滚动条轨道 内阴影+圆角*/
+::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    background-color: #ddd;
+}
+
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb
+{
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #b0df32;
+}
+/*选中的字为绿色*/
+::selection{
+    background-color: #cef677;}
+body{
+    font-size:16px;
+    color:#000;
+    margin:0;
+    padding:0;
+    overflow-x: hidden;
+}
+ul,p,h1,h2,h3,h4,h5,h6,dl,dd{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+.white{
+    font-color:#fff;
+    font-size:17px;
+}
+.lf{float:left;}
+.rt{float:right;}
+.clear{clear:both;}
+
+img{vertical-align:middle;}
+a{
+    color:#000;
+    text-decoration:none;
+}
+a:hover {
+    color:#7702BA;
+    text-decoration: none;
+}
+/*右边个人信息*/
+div.right{
+    width:718px;
+    height:798px;
+    border:1px solid #ddd;
+    margin-left:10px;
+}
+div.right input{
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    border-radius:3px;
+    border:1px solid #ddd;
+    height:20px;
+    padding-left:3px;
+}
+div.right input:focus,select:focus,textarea:focus{
+    outline-color: #a4de27;
+}
+
+div.right select{
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    border-radius:3px;
+    border:1px solid #ddd;
+    height:22px;
+    width:100px;
+    size: 6;
+}
+div.right textarea{
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    border-radius:3px;
+    border:1px solid #ddd;
+    height:100px;
+    width:300px;
+    vertical-align: top;
+    font-family: microsoft YaHei;
+}
+div.right span{
+    line-height:30px;
+}
+
+/*所有彩色标题的共同样式*/
+div.right div.biaoti{
+    width:694px;
+    height:23px;
+    border-bottom:1px solid #ddd;
+}
+/*基本信息*/
+div.right div.jiben{
+    width:694px;
+    height:150px;
+    margin-left:12px;
+    margin-right:12px;
+    margin-top:4px;
+}
+div.right div.jiben h4{
+    color: #82D009;
+    width:99px;
+    padding-bottom:1px;
+    margin-left:-1px;
+    border-bottom:3px solid #82D009;
+}
+/*详细信息*/
+div.right div.xiangxi{
+    width:694px;
+    height:324px;
+    margin-left:12px;
+    margin-right:12px;
+    margin-top:4px;
+}
+div.right div.xiangxi h4{
+    color: #1F82F0;
+    width:99px;
+    padding-bottom:1px;
+    margin-left:-1px;
+    border-bottom:3px solid #1F82F0;
+}
+/*详细信息*/
+div.right div.xiangxi{
+    width:694px;
+    height:286px;
+    margin-left:12px;
+    margin-right:12px;
+    margin-top:4px;
+}
+div.right div.xiangxi h4{
+    color: #1F82F0;
+    width:99px;
+    padding-bottom:1px;
+    margin-left:-1px;
+    border-bottom:3px solid #1F82F0;
+}
+/*安全设置*/
+div.right div.anquan{
+    width:694px;
+    height:153px;
+    margin-left:12px;
+    margin-right:12px;
+    margin-top:84px;
+}
+div.right div.anquan h4{
+    color: #C72FCB;
+    width:72px;
+    padding-bottom:1px;
+    margin-left:-1px;
+    border-bottom:3px solid #C72FCB;
+}
+/*提交按钮*/
+div.right input.save{
+    width:130px;
+    height:35px;
+    background-color:#b0df32;
+    font-size:18px;
+    color: #fff;
+    display: block;
+    margin:10px auto;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+    -webkit-box-shadow:none;
+    -moz-box-shadow: none;
+    box-shadow:none;
+    padding:0px;
+}

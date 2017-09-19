@@ -1,0 +1,956 @@
+/*body{
+    font-family: "黑体";
+}*/
+header{
+    width:100%;
+    height:auto;
+    /* 可能需要改写渐变色*/
+    border-bottom: 0.3em solid #0bb2d6;
+    overflow: hidden;
+    background:  url(../img/logo.png) #262f38 no-repeat 0.7em center;
+}
+header ul ,
+header ol,
+header .search{
+    float: right;
+    margin-right: 2.1em;
+}
+header ul li,
+header ol li{
+    float: left;
+}
+header ul li a{
+    color: #fff;
+    font-size: 1.3em;
+    display: inline-block;
+    padding:2.4em 1.1em;
+    transition: 1s;
+}
+header ul li.current-nav a,
+header ul li a:hover{
+    background-color: #0ab3d4;
+}
+header .btn-toggle{
+    width:40px;
+    height:40px;
+    position: absolute;
+    right:54%;
+    top:1em;
+    background: url(../img/icon.png) no-repeat 0 0;
+    display: none;
+}
+header #close{
+    background: url(../img/close-icon.png) no-repeat 0 0;
+}
+header .search{
+    width:37px;
+    height:37px;
+    margin-top: 1.8em;
+    background: url(../img/search.png) no-repeat 0 0 ;
+    background-size: cover;
+}
+header ol li{
+    margin-right: 1.42em;
+}
+header ol li a{
+    width:20px;
+    height:20px;
+    display: inline-block;
+    margin-top: 2.9em;
+    background: url(../img/social-sprit01.png) no-repeat ;
+    transition: 0.5s;
+
+}
+header ol li:nth-child(2) a{
+    background-position: -20px 0;
+}
+header ol li:nth-child(3) a{
+    background-position: -40px 0;
+}
+header ol li:nth-child(1) a:hover{
+    background-position: 0 -25px;
+}
+header ol li:nth-child(2) a:hover{
+    background-position: -20px -25px;
+}
+header ol li:nth-child(3) a:hover{
+    background-position: -40px -25px;
+}
+
+/* for nav */
+nav{
+    width:100%;
+    position: relative;
+}
+nav .nav-img{
+    width:100%;
+}
+nav .nav-img img{
+    width:100%;
+}
+nav .nav-bottom{
+    width:100%;
+    background-color: #0ab3d4;
+    padding:2.2em  1.14em;
+    color: #fff;
+    font-size: 1.6em;
+    line-height: 100%;
+    margin-top: -0.22em;
+    position: relative;
+    height:auto;
+}
+nav .nav-bottom a{
+    display: block;
+    width:10%;
+    height:2.3em;
+    line-height:2.3em;
+    background-color: rgba(40,44,55,0.8);
+    border-radius: 6px;
+    font-size: 1em;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    top:30%;
+    right:10%;
+}
+nav .nav-leftBtn,
+nav .nav-rightBtn{
+    position: absolute;
+    width:48px;
+    height:48px;
+    cursor: pointer;
+}
+nav .nav-leftBtn{
+    background: url(../img/4.png) no-repeat 0 0 ;
+    margin-top: -24px;
+    left:24px;
+    top:40%;
+    opacity: .5;
+}
+nav .nav-rightBtn{
+    background: url(../img/3.png) no-repeat 0 0 ;
+    right:24px;
+    top:40%;
+    margin-top: -24px;
+    opacity: .5;
+}
+nav .nav-leftBtn:hover,
+nav .nav-rightBtn:hover{
+    opacity: 1;
+}
+nav .nav-info{
+    width:75%;
+    position: absolute;
+    top:38%;
+    left:12.5%;
+}
+nav .nav-info h1{
+    font-size: 5em;
+    color: #fff;
+    margin:5px auto;
+    text-align: center;
+}
+nav .nav-info h4{
+    font-size: 2.6em;
+    color:#18acdc;
+    text-align: center;
+    margin:5px auto;
+}
+nav .nav-info a{
+    color: #fff;
+    width:109px;
+    height:33px;
+    background-color:#09b3d6;
+    line-height: 33px;
+    font-size: 1.2em;
+    text-align: center;
+    display: block;
+    margin:20px auto;
+    border-radius: 6px;
+}
+
+/* for main  */
+main{
+    width:96%;
+    padding:30px 2%;
+}
+/* for main layout */
+main .services{
+    width:100%;
+}
+
+/* for main same content*/
+main .header-moudal{
+    width:100%;
+    margin:0 auto ;
+}
+main .header-moudal h2{
+    margin:0 auto ;
+    font-size: 2.2em;
+    color: #494843;
+    width:100%;
+    text-align: center;
+    font-weight: 900;
+}
+main .header-moudal span{
+    display: block;
+    width:100%;
+    text-align: center;
+    color: #c9b39e;
+    font-size: 1.4em;
+    line-height:2.4em ;
+    margin-bottom: 1em;
+}
+main .services .services-top,
+main .services .services-bottom,
+main .best-feature,
+main .eff-feature,
+main .projects{
+    width:100%;
+    padding-bottom: 20px;
+    border-bottom:1px solid #e5e5e5 ;
+    margin-bottom: 2em;
+    overflow: hidden;
+}
+
+/* for main services */
+main .services .services-top a,
+main .services .services-bottom a{
+    display: inline-block;
+    width:29%;
+}
+main .services .services-top a:nth-child(1),
+main .services .services-top a:nth-child(2),
+main .services .services-bottom a:nth-child(1),
+main .services .services-bottom a:nth-child(2){
+    margin-right: 5%;
+}
+main .services .services-top a img,
+main .services .services-bottom a img{
+    max-width:100%;
+    vertical-align: top;
+}
+main .services .services-top a h6,
+main .services .services-bottom a h6{
+    font-size: 1.2em;
+    color: #0b060c;
+    font-weight: bolder;
+}
+main .services .services-top p,
+main .services .services-bottom p{
+
+    font-size: 0.85em;
+    color: #adaca8;
+    line-height: 1.4em;
+}
+
+/* for main best-feature and eff-feature*/
+main .best-feature .best-feature-content,
+main .eff-feature .eff-feature-content{
+    width:100%;
+}
+main .best-feature .best-feature-content .feaImg,
+main .eff-feature .eff-feature-content .feaImg{
+    width:38%;
+    height:auto;
+    float: left;
+}
+main .best-feature .best-feature-content .feaImg{
+    margin-right: 2%;
+}
+main .best-feature .best-feature-content .feaImg img,
+main .eff-feature .eff-feature-content .feaImg img{
+    width:100%;
+    border:none;
+}
+main .best-feature .best-feature-content .intro,
+main .eff-feature .eff-feature-content .intro{
+    width:58%;
+    padding-top: 2em;
+    float: left;
+}
+main .eff-feature .eff-feature-content .intro{
+    margin-right: 2%;
+}
+main .best-feature .best-feature-content .intro h6,
+main .eff-feature .eff-feature-content .intro h6{
+    font-size:1.22em;
+    line-height: 2em;
+    color: #000;
+}
+main .best-feature .best-feature-content .intro p,
+main .eff-feature .eff-feature-content .intro p{
+    color: #979a9f;
+    font-size: 0.7em;
+    line-height: 1.43em;
+    width:100%;
+}
+main .best-feature .best-feature-content .intro  a,
+main .eff-feature .eff-feature-content .intro  a{
+    color: #3ee0f5;
+    font-size: 1em;
+    text-decoration: underline;
+    margin-top: 1.8em;
+    font-weight: bolder;
+    display: block;
+}
+
+
+/* for main projects */
+main .projects .projects-content{
+    width:100%;
+}
+main .projects .projects-content a{
+    display: inline-block;
+    width:23%;
+    margin-right: 2%;
+}
+main .projects .projects-content a img{
+    width:100%;
+}
+main .projects .projects-content a:last-child{
+    margin-right: 0;
+}
+main .projects .projects-content a h6{
+    font-size: 1.2em;
+    color: #000;
+    text-align: center;
+}
+main .projects .projects-content a p{
+    text-align: center;
+    color: #b9b8b6;
+    font-size: 0.9em;
+}
+
+/* for main clients */
+main .clients .clients-content{
+    width:80%;
+    padding:0 10%;
+}
+main .clients .clients-content p{
+    width:100%;
+    text-align: center;
+    color: #a8a7a5;
+    font-size: 1em;
+
+}
+main .clients .clients-content .line{
+    width:50%;
+    height:1px;
+    border-bottom: 1px solid #adadad;
+    margin:1em auto ;
+
+}
+main .clients .clients-content h3{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1.4em;
+    color: #000;
+    margin-bottom: 0.8em;
+}
+main .clients .clients-content ul {
+    width:17%;
+    margin:0 auto;
+    overflow: hidden;
+}
+main .clients .clients-content ul li{
+    float: left;
+    margin-right: 14%;
+}
+main .clients .clients-content ul li:last-child{
+    margin-right: 0;
+}
+main .clients .clients-content ul li a{
+    display: block;
+    width:11px;
+    height:11px;
+    background: url(../img/Dot.png) no-repeat 0 0 ;
+}
+main .clients .clients-content ul li a:hover,
+main .clients .clients-content ul li.current-dot a{
+    background: url(../img/hoverDot.png) no-repeat 0 0 ;
+
+}
+
+/* for footer */
+footer{
+    margin-top: 1em;
+    width:100%;
+    background-color: #262f38;
+}
+footer .footer-top{
+    width:98%;
+    padding:2em 2%;
+    background-color: #0ab0d8;
+    position: relative;
+}
+footer .footer-top p:nth-child(1){
+    font-size: 1.28em;
+    color: #fff;
+    font-weight: bolder;
+    line-height: 2em;
+}
+footer .footer-top p:nth-child(2){
+    font-size: 1.2em;
+    color: #fff;
+    text-decoration: underline;
+    line-height: 2em;
+}
+footer .footer-top a{
+    position: absolute;
+    width:10%;
+    height:2.4em;
+    line-height: 2.4em;
+    display: block;
+    background: rgba(38,46,57,0.8);
+    text-align: center;
+    border-radius: 6px;
+    top:32%;
+    right:5%;
+    color: #fff;
+    font-size: 1.4em;
+}
+footer .footer-bottom{
+    width:98%;
+    padding:2em 2%;
+    overflow: hidden;
+}
+footer .footer-bottom .theme{
+    width:17%;
+    float: left;
+}
+footer .footer-bottom .posts,
+footer .footer-bottom .categories,
+footer .footer-bottom .recent{
+    width:24%;
+    float: left;
+}
+footer .footer-bottom .theme,
+footer .footer-bottom .posts,
+footer .footer-bottom .categories{
+    margin-right: 3%;
+}
+footer .footer-bottom .footer-header{
+    font-size: 1.3em;
+    color: #e7d1c4;
+    font-weight: bolder;
+    line-height: 2.4em;
+}
+footer .footer-bottom .theme p{
+    color: #9aa3a8;
+    font-size: 0.8em;
+    text-align: justify;
+}
+footer .footer-bottom .posts ul li{
+    width:100%;
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid #353f49;
+    overflow: hidden;
+    margin-bottom: 0.5em;
+
+}
+footer .footer-bottom .posts ul li img{
+    float: left;
+    margin-right: 1.8em;
+    width:auto;
+    height:auto;
+}
+footer .footer-bottom .posts ul li p{
+    font-size: 1em;
+    float: left;
+}
+footer .footer-bottom .posts ul li span{
+    float: left;
+    font-size: 1em;
+    color: #7e8c99;
+}
+footer .footer-bottom .categories ul li{
+    padding-bottom: 0.5em;
+    margin-bottom: 1.5em;
+    border-bottom: 1px solid #353f49;
+}
+footer .footer-bottom .categories ul li a{
+    color: #9aa3a8;
+}
+footer .footer-bottom .recent ul li{
+    float: left;
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+footer .footer-bottom .recent ul li a img{
+    width:100%;
+}
+
+/* for Responsive Web Page */
+@media screen and (min-width: 768px) and (max-width: 991px){
+   header ul li a {
+    font-size: 1.2em;
+    padding: 2em 1em;
+}
+    header ol li a{
+        margin-top: 2.5em;
+    }
+    nav .nav-bottom{
+        padding:1.8em 0.8em;
+        font-size: 1.4em;
+    }
+    nav .nav-bottom a{
+        font-size: 0.6em;
+    }
+    nav .nav-info{
+        top:30%;
+    }
+    nav .nav-info h1{
+        font-size:3em;
+    }
+    nav .nav-info h4{
+        font-size: 1.9em;
+    }
+    nav .nav-info a{
+        font-size: 0.9em;
+        width:90px;
+        height:25px;
+        line-height:25px;
+    }
+    /* pad main */
+    main .services .services-top a,
+    main .services .services-bottom a{
+        width:46%;
+        margin-bottom: 1em;
+    }
+    main .services .services-top a:nth-child(2),
+    main .services .services-bottom a:nth-child(2){
+        margin-right: 0;
+    }
+   main .best-feature .best-feature-content .intro,
+   main .eff-feature .eff-feature-content .intro{
+       padding-top: 0;
+   }
+    main .best-feature .best-feature-content .intro a,
+    main .eff-feature .eff-feature-content .intro a{
+        margin-top: 0.5em;
+    }
+    main .projects .projects-content a{
+        width:47%;
+        margin-bottom: 1.5em;
+    }
+    main .projects .projects-content a:nth-child(2){
+        margin-right: 0;
+    }
+    main .clients .clients-content ul li{
+        margin-right: 10%;
+    }
+    footer .footer-top{
+        padding:1em 2%;
+    }
+    footer .footer-top p:nth-child(1){
+        font-size:1em;
+    }
+    footer .footer-top p:nth-child(2){
+        font-size: 0.8em;
+    }
+    footer .footer-top a{
+        height:2em;
+        line-height: 2em;
+        font-size: 0.7em;
+    }
+    footer .footer-bottom .theme,
+    footer .footer-bottom .posts,
+    footer .footer-bottom .categories,
+    footer .footer-bottom .recent{
+        width:46%;
+    }
+}
+
+/* for phone */
+@media screen and (max-width: 767px) and (min-width: 441px){
+    header{
+        height:5em;
+    }
+
+    header ul  {
+        width:100%;
+        position: absolute;
+        z-index:20;
+        top:5em;
+        overflow: hidden;
+        background-color: rgba(0,0,0,0.9);
+    }
+    header ul li{
+        float: none;
+        width:100%;
+    }
+    header ul li a{
+        display: block;
+        color: #fff;
+        font-size: 1em;
+        padding:0.7em;
+        text-align: center;
+        transition: 1s;
+    }
+    header ul li a:hover{
+        background-color: rgba(10,179,212,0.6);
+        color: #fff;
+    }
+
+    header .btn-toggle{
+          display: block;
+          right:43%;
+      }
+    #auvtion-nav{
+          display: none;
+      }
+    #auvtion-nav:target{
+        display: block;
+    }
+
+    header ol{
+        margin-right: 1em;
+    }
+    header ol li a{
+        margin-top: 1.8em;
+    }
+    header .search{
+        margin-bottom: 1em;
+        margin-top: 1em;
+    }
+    nav .nav-bottom{
+        padding:1em 0.4em;
+        font-size: 0.8em;
+        padding-bottom: 4em;
+    }
+    nav .nav-bottom a{
+        top:50%;
+        left:50%;
+        margin-left: -10%;
+        font-size: 0.4em;
+        width:20%;
+    }
+    nav .nav-info{
+        top:20%;
+    }
+    nav .nav-info h1{
+        font-size:1.8em;
+    }
+    nav .nav-info h4{
+        font-size: 1em;
+    }
+    nav .nav-info a{
+        font-size: 0.4em;
+        width:80px;
+        height:20px;
+        line-height:20px;
+    }
+    nav .nav-leftBtn,
+    nav .nav-rightBtn{
+        width:24px;
+        height:24px;
+        background-size: cover;
+    }
+    /*phone main */
+    main{
+        padding:10px 2%;
+    }
+    main .header-moudal h2{
+        font-size: 1.5em;
+    }
+    main .header-moudal span{
+        font-size:1em;
+    }
+    main .services .services-top a,
+    main .services .services-bottom a{
+        width:100%;
+        margin-bottom: 1em;
+        margin-right: 0;
+    }
+    main .services .services-top a img,
+    main .services .services-bottom a img{
+        width:100%;
+    }
+    main .best-feature .best-feature-content .feaImg,
+    main .eff-feature .eff-feature-content .feaImg{
+        width:100%;
+    }
+    main .best-feature .best-feature-content .intro,
+    main .eff-feature .eff-feature-content .intro{
+        padding-top: 0;
+        width:100%;
+    }
+    main .best-feature .best-feature-content .intro a,
+    main .eff-feature .eff-feature-content .intro a{
+        margin-top: 0.5em;
+    }
+    main .projects .projects-content a{
+        width:100%;
+        margin-bottom: 1.5em;
+        margin-right: 0;
+    }
+    main .clients .clients-content ul li{
+        margin-right: 10%;
+    }
+    main .clients .clients-content ul li a{
+        width:5px;
+        height:5px;
+        background-size: cover;
+    }
+    main .clients .clients-content ul li a:hover,
+    main .clients .clients-content ul li.current-dot a{
+        background-size: cover;
+    }
+    footer .footer-top{
+        padding:1em 2%;
+        padding-bottom: 3em;
+    }
+    footer .footer-top p:nth-child(1){
+        font-size:1em;
+    }
+    footer .footer-top p:nth-child(2){
+        font-size: 0.8em;
+    }
+    footer .footer-top a{
+        top:65%;
+        left:50%;
+        width:20%;
+        margin-left: -10%;
+        height:2em;
+        line-height: 2em;
+        font-size: 0.5em;
+    }
+    footer .footer-bottom .theme,
+    footer .footer-bottom .posts,
+    footer .footer-bottom .categories,
+    footer .footer-bottom .recent{
+        width:100%;
+    }
+    footer .footer-bottom{
+        padding:1em 2%;
+    }
+    .footer .footer-bottom .footer-header{
+        font-size: 1em;
+        line-height: 2em;
+    }
+    .footer-bottom{
+        text-align: center;
+    }
+    .footer-bottom .recent ul{
+        width:auto;
+        height:auto;
+        margin:1em auto;
+    }
+    .footer-bottom .recent ul li{
+        width:22%;
+    }
+}
+/*for small phone */
+@media screen and (max-width: 441px){
+    header{
+           background: url(../img/logo02.png) #262f38 no-repeat 0.4em center;
+
+       }
+
+    header{
+           height:5em;
+       }
+
+    header ul  {
+           width:100%;
+           position: absolute;
+           z-index:20;
+           top:4em;
+           overflow: hidden;
+           background-color: rgba(0,0,0,0.9);
+       }
+    header ul li{
+           float: none;
+           width:100%;
+       }
+    header ul li a{
+           display: block;
+           color: #fff;
+           font-size: 1em;
+           padding:0.7em;
+           text-align: center;
+           transition: 1s;
+       }
+    header ul li a:hover{
+           background-color: rgba(10,179,212,0.6);
+           color: #fff;
+       }
+    header .btn-toggle{
+             display: block;
+              right:50%;
+         }
+    #auvtion-nav{
+              display: none;
+          }
+    #auvtion-nav:target{
+           display: block;
+       }
+    header ol li{
+        margin-right: 0.5em;
+    }
+    header ol{
+           margin-right: 1em;
+       }
+       header ol li a{
+           margin-top: 1.8em;
+       }
+       header .search{
+           margin-bottom: 1em;
+           margin-top: 1em;
+       }
+       nav .nav-bottom{
+           padding:1em 0.4em;
+           font-size: 0.8em;
+           padding-bottom: 4em;
+       }
+       nav .nav-bottom a{
+           top:50%;
+           left:50%;
+           margin-left: -10%;
+           font-size: 0.4em;
+           width:20%;
+       }
+       nav .nav-info{
+           top:20%;
+       }
+       nav .nav-info h1{
+           font-size:1.8em;
+       }
+       nav .nav-info h4{
+           font-size: 1em;
+       }
+       nav .nav-info a{
+           font-size: 0.4em;
+           width:80px;
+           height:20px;
+           line-height:20px;
+       }
+       nav .nav-leftBtn,
+       nav .nav-rightBtn{
+           width:24px;
+           height:24px;
+           background-size: cover;
+       }
+       /*phone main */
+       main{
+           padding:10px 2%;
+       }
+       main .header-moudal h2{
+           font-size: 1.5em;
+       }
+       main .header-moudal span{
+           font-size:1em;
+       }
+       main .services .services-top a,
+       main .services .services-bottom a{
+           width:100%;
+           margin-bottom: 1em;
+           margin-right: 0;
+       }
+       main .services .services-top a img,
+       main .services .services-bottom a img{
+           width:100%;
+       }
+       main .best-feature .best-feature-content .feaImg,
+       main .eff-feature .eff-feature-content .feaImg{
+           width:100%;
+       }
+       main .best-feature .best-feature-content .intro,
+       main .eff-feature .eff-feature-content .intro{
+           padding-top: 0;
+           width:100%;
+       }
+       main .best-feature .best-feature-content .intro a,
+       main .eff-feature .eff-feature-content .intro a{
+           margin-top: 0.5em;
+       }
+       main .projects .projects-content a{
+           width:100%;
+           margin-bottom: 1.5em;
+           margin-right: 0;
+       }
+       main .clients .clients-content ul li{
+           margin-right: 10%;
+       }
+       main .clients .clients-content ul li a{
+           width:5px;
+           height:5px;
+           background-size: cover;
+       }
+       main .clients .clients-content ul li a:hover,
+       main .clients .clients-content ul li.current-dot a{
+           background-size: cover;
+       }
+       footer .footer-top{
+           padding:1em 2%;
+           padding-bottom: 3em;
+       }
+       footer .footer-top p:nth-child(1){
+           font-size:1em;
+       }
+       footer .footer-top p:nth-child(2){
+           font-size: 0.8em;
+       }
+       footer .footer-top a{
+           top:65%;
+           left:50%;
+           width:20%;
+           margin-left: -10%;
+           height:2em;
+           line-height: 2em;
+           font-size: 0.5em;
+       }
+       footer .footer-bottom .theme,
+       footer .footer-bottom .posts,
+       footer .footer-bottom .categories,
+       footer .footer-bottom .recent{
+           width:100%;
+       }
+       footer .footer-bottom{
+           padding:1em 2%;
+       }
+       .footer .footer-bottom .footer-header{
+           font-size: 1em;
+           line-height: 2em;
+       }
+       .footer-bottom{
+           text-align: center;
+       }
+       .footer-bottom .recent ul{
+           width:auto;
+           height:auto;
+           margin:1em auto;
+       }
+       .footer-bottom .recent ul li{
+           width:22%;
+       }
+    nav .nav-info{
+            top:10%;
+        }
+    footer .footer-top{
+          padding:1em 2%;
+          padding-bottom: 3em;
+      }
+    footer .footer-top a{
+           top:76%;
+           left:50%;
+           width:20%;
+           margin-left: -10%;
+           height:2em;
+           line-height: 2em;
+           font-size: 0.5em;
+       }
+
+}
+
+
+
+
+
+
+
+
+
+
+

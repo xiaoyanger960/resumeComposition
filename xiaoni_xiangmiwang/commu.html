@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>乡觅社区欢迎您！</title>
+    <script src="http://libs.baidu.com/jquery/1.4.2/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet" href="css/stylevideo.css">
+    <link rel="stylesheet" type="text/css" href="commu.css">
+    <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css" rel="stylesheet">
+    <script src="http://www.jq22.com/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://mindmup.s3.amazonaws.com/lib/jquery.hotkeys.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
+    <script src="http://twitter.github.com/bootstrap/assets/js/google-code-prettify/prettify.js"></script>
+    <link href="css/text.css" rel="stylesheet">
+    <script src="js/bootstrap-wysiwyg.js"></script>
+    <style>
+        body{
+            font-size:16px;
+            color:#000;
+            margin:0;
+            padding:0;
+            overflow-x: hidden;
+        }
+        ul,p,h1,h2,h3,h4,h5,h6,dl,dd{
+            margin:0;
+            padding:0;
+            list-style:none;
+        }
+        .white{
+            font-color:#fff;
+            font-size:17px;
+        }
+        .lf{float:left;}
+        .rt{float:right;}
+        .clear{clear:both;}
+        img{vertical-align:middle;}
+        a{
+            color:#000;
+            text-decoration:none;
+        }
+        a:hover {
+            color:#7702BA;
+            text-decoration: none;
+        }
+        /*头部背景与标语*/
+        #header{
+            width:100%;
+            height:40px;
+            background:url(images/header.jpg) repeat-x 0px 0px;
+            -webkit-background-clip: padding-box;
+            -moz-background-clip: padding-box;
+            background-clip: padding-box;
+            font-size:17px;
+            position: fixed;
+            z-index:2000;
+
+        }
+        div.header{
+            width:300px;
+        }
+        div.header>a{
+            line-height:34px;
+            padding-left:30px;
+            color:#fff;
+        }
+        div.header>a:hover{
+            color:#7702BA;
+        }
+        /*搜索框*/
+        div.search{
+            line-height:34px;
+            height:30px;
+            font-color:#fff;
+            margin-left:600px;
+        }
+        div.search>input{
+            -webkit-border-radius:7px;
+            -moz-border-radius:7px;
+            border-radius:7px;
+            border:1px solid #fff;
+            background-color: rgba(255,255,255,0.5);
+        }
+        input:placeholder{
+            font-color:#fff;
+        }
+        /*登录与注册*/
+        a.log{
+            margin-left:76px;
+            line-height:34px;
+            color:#fff;
+        }
+        a.reg{
+            margin-left:30px;
+            line-height:34px;
+            color:#fff;
+        }
+        /*导航栏*/
+        div.nav{
+            width:1000px;
+            height:70px;
+            margin:0px auto;
+            clear: both;
+            padding-top:30px;
+        }
+        .nav .nav1 ul li{
+            float: left;
+        }
+        .nav .nav1 ul li a{
+            line-height:70px;
+            margin-left:67px;
+        }
+        .nav .nav1 ul li a.first{
+            maigin-left:70px;
+        }
+        .nav .nav1{
+            margin:0px auto;
+        }
+        /*标题*/
+        div.biaoti{
+            width:900px;
+            height:32px;
+            line-height:32px;
+            float: left;
+            margin-left:224px;
+            background: #7653eb;
+            margin-top:-2px;
+        }
+        div.biaoti ul{
+            float: left;
+        }
+        div.biaoti ul li{
+            float: left;
+        }
+        div.biaoti ul li a{
+            color: #fff;
+            height:32px;
+            display: inline-block;
+            line-height:32px;
+            padding-right:96px;
+            padding-left:96px;
+            border-left:1px solid #fff;
+        }
+        div.biaoti ul li a:hover{
+            background: #8e44c6;
+        }
+    </style>
+</head>
+<body>
+<!--绿色公共头部-->
+<header id="header">
+    <!--网站宗旨-->
+    <div class="header lf" class="wangzhanbiaoyu">
+        <a href="index.html" >乡觅网，带您寻找美好的乡村之旅</a>
+    </div>
+    <!--搜索框-->
+    <div class="search lf">
+        <input type="search" name="search" placeholder="&nbsp&nbsp搜索您向往的美丽乡村" style="padding: 0px ;margin-bottom: 0px;">
+        <a href="#">
+            <img src="images/search.jpg">
+        </a>
+    </div>
+    <!--登录与注册-->
+    <a  href="personal.html" class="log white lf"
+        style="width: 40px; height: 40px;border-radius: 50%;overflow: hidden;">
+        <img src="personalimages/usertu_09.jpg" style="width: 35px; height: 35px;border-radius: 50%;">
+    </a>
+    <a href="#" class="reg white lf">已登录</a>
+</header>
+<!--导航栏-->
+<div class="nav">
+    <!--导航名称-->
+    <div class="nav1">
+        <ul>
+            <li ><a href="index.html" class="first">乡觅首页</a></li>
+            <li><a href="viewplay.html" target="_self">景点玩乐</a></li>
+            <li><a href="xinwen.html" target="_self">新闻资讯</a></li>
+            <li><a href="festi.html" target="_self">民俗节日</a></li>
+            <li><a href="commu.html" target="_self" style="color: #7702ba;">乡觅社区</a></li>
+            <li><a href="book.html" target="_self">预定中心</a></li>
+            <li><a href="personal.html" target="_self">个人主页</a></li>
+        </ul>
+    </div>
+    <!--导航装饰三角号-->
+    <div class="sanjiao1">
+        <div class="tri1"> </div>
+        <div class="line1"> </div>
+        <div class="line1">  </div>
+    </div>
+</div>
+<!--标题-->
+<div class="biaoti">
+    <ul>
+        <li><a href="#" style="background-color: #8e44c6;">最新</a></li>
+        <li><a href="#">精华</a></li>
+        <li><a href="#">热门</a></li>
+        <li><a href="#">排行</a></li>
+    </ul>
+</div>
+<!--帖子-->
+<div class="teizi">
+    <ul>
+        <li style="height: 300px;">
+            <!--左边头像-->
+            <div class="left"><img src="commuimages/tou_01.jpg"></div>
+            <!--右边内容-->
+            <div class="right">
+                <!--网名-->
+                <p class="wangming">依心有水</p>
+                <!--帖子标题-->
+                <p class="neirong">一场永存的记忆旅行</p>
+                <!--帖子中的视频-->
+                <div id="videoBox" class="box">
+                    <video width="100" controls >autoplay="autoplay"
+                        <source src="commuimages/四年一梦小.mp4" type="video/mp4">
+                        Your browser does not support HTML5 video. </video>
+                </div>
+                <!--爱心点赞-->
+                <div class="feed" id="feed1" style="width: 100px;height: 40px; margin-top: 32px; float: left;">
+                    <div class="heart lf " id="like1" rel="like"></div> <div class="likeCount" id="likeCount1">15</div>
+                </div>
+                <!--时间评论浏览量-->
+                <div class="tubiao"></div>
+                <span class="zi">2017-05-12</span>
+                <div class="tubiao tubiao2"></div>
+                <span class="zi zi2">12</span>
+                <div class="tubiao tubiao3"></div>
+                <span class="zi zi3">105</span>
+        </li>
+        <li style="height: 229px;">
+            <!--左边头像-->
+            <div class="left"><img src="commuimages/tou_02.jpg"></div>
+            <!--右边内容-->
+            <div class="right">
+                <!--网名2-->
+                <p class="wangming">努力</p>
+                <p class="neirong">品五彩米，赏哈尼族智慧的结晶</p>
+                <!--评论图-->
+                <div class="pingluntu">
+                    <ul class="pingluntu">
+                        <li>
+                            <img src="commuimages/ping_01.jpg">
+                        </li>
+                        <li>
+                            <img src="commuimages/ping_02.jpg">
+                        </li>
+                        <li>
+                            <img src="commuimages/ping_03.jpg">
+                        </li>
+                    </ul>
+                </div>
+                <!--爱心点赞-->
+                <div class="feed" id="feed1" style="width: 100px;height: 40px; margin-top: 32px; float: left;">
+                    <div class="heart lf " id="like1" rel="like"></div> <div class="likeCount" id="likeCount1">15</div>
+                </div>
+                <!--时间评论浏览量-->
+                <div class="tubiao"></div>
+                <span class="zi">2017-05-11</span>
+                <div class="tubiao tubiao2"></div>
+                <span class="zi zi2">52</span>
+                <div class="tubiao tubiao3"></div>
+                <span class="zi zi3">118</span>
+        </li>
+        <li style="height: 145px;">
+            <!--左边头像-->
+            <div class="left"><img src="commuimages/tou_03.jpg"></div>
+            <!--右边内容-->
+            <div class="right">
+                <!--网名-->
+                <p class="wangming">爱上黄昏</p>
+                <!--帖子标题-->
+                <p class="neirong">面朝大海，春暖花开，带上家人去感受大海</p>
+                <!--爱心点赞-->
+                <div class="feed" id="feed1" style="width: 100px;height: 40px; margin-top: 32px; float: left;">
+                    <div class="heart lf " id="like1" rel="like"></div> <div class="likeCount" id="likeCount1">15</div>
+                </div>
+                <!--时间评论浏览量-->
+                <div class="tubiao"></div>
+                <span class="zi">2017-03-22</span>
+                <div class="tubiao tubiao2"></div>
+                <span class="zi zi2">1145</span>
+                <div class="tubiao tubiao3"></div>
+                <span class="zi zi3">14000</span>
+        </li>
+        <li style="height: 229px;">
+            <!--左边头像-->
+            <div class="left"><img src="commuimages/tou_04.jpg"></div>
+            <!--右边内容-->
+            <div class="right">
+                <!--网名2-->
+                <p class="wangming">CoCo小姐</p>
+                <p class="neirong"><a href="commu_cocolady.html">光影佤乡 雾美沧源</a></p>
+                <!--评论图-->
+                <div class="pingluntu">
+                    <ul class="pingluntu">
+                        <li>
+                            <img src="commuimages/ping_04.jpg">
+                        </li>
+                        <li>
+                            <img src="commuimages/ping_05.jpg">
+                        </li>
+                        <li>
+                            <img src="commuimages/ping_06.jpg">
+                        </li>
+                    </ul>
+                </div>
+                <!--爱心点赞-->
+                <div class="feed" id="feed1" style="width: 100px;height: 40px; margin-top: 32px; float: left;">
+                    <div class="heart lf " id="like1" rel="like"></div> <div class="likeCount" id="likeCount1">15</div>
+                </div>
+                <!--时间评论浏览量-->
+                <div class="tubiao"></div>
+                <span class="zi">2017-03-20</span>
+                <div class="tubiao tubiao2"></div>
+                <span class="zi zi2">65</span>
+                <div class="tubiao tubiao3"></div>
+                <span class="zi zi3">96</span>
+        </li>
+        <li style="height: 145px;">
+            <!--左边头像-->
+            <div class="left"><img src="commuimages/tou_05.jpg"></div>
+            <!--右边内容-->
+            <div class="right">
+                <!--网名-->
+                <p class="wangming">微风轻轻的吹</p>
+                <!--帖子标题-->
+                <p class="neirong">我们一起去西藏</p>
+                <!--爱心点赞-->
+                <div class="feed" id="feed1" style="width: 100px;height: 40px; margin-top: 32px; float: left;">
+                    <div class="heart lf " id="like1" rel="like"></div> <div class="likeCount" id="likeCount1">15</div>
+                </div>
+                <!--时间评论浏览量-->
+                <div class="tubiao"></div>
+                <span class="zi">2017-03-12</span>
+                <div class="tubiao tubiao2"></div>
+                <span class="zi zi2">08</span>
+                <div class="tubiao tubiao3"></div>
+                <span class="zi zi3">23</span>
+        </li>
+        <li style="height: 229px;">
+            <!--左边头像-->
+            <div class="left"><img src="commuimages/tou_06.jpg"></div>
+            <!--右边内容-->
+            <div class="right">
+                <!--网名2-->
+                <p class="wangming">卡卡168</p>
+                <p class="neirong">游贵州青山绿水，感受黔之风土人情</p>
+                <!--评论图-->
+                <div class="pingluntu">
+                    <ul class="pingluntu">
+                        <li>
+                            <img src="commuimages/ping_07.jpg">
+                        </li>
+                        <li>
+                            <img src="commuimages/ping_08.jpg">
+                        </li>
+                    </ul>
+                </div>
+                <!--爱心点赞-->
+                <div class="feed" id="feed1" style="width: 100px;height: 40px; margin-top: 32px; float: left;">
+                    <div class="heart lf " id="like1" rel="like"></div> <div class="likeCount" id="likeCount1">15</div>
+                </div>
+                <!--时间评论浏览量-->
+                <div class="tubiao"></div>
+                <span class="zi">2017-05-11</span>
+                <div class="tubiao tubiao2"></div>
+                <span class="zi zi2">52</span>
+                <div class="tubiao tubiao3"></div>
+                <span class="zi zi3">118</span>
+        </li>
+        <li style="height: 229px;">
+            <!--左边头像-->
+            <div class="left"><img src="commuimages/tou_02.jpg"></div>
+            <!--右边内容-->
+            <div class="right">
+                <!--网名2-->
+                <p class="wangming">努力</p>
+                <p class="neirong">品五彩米，赏哈尼族智慧的结晶</p>
+                <!--评论图-->
+                <div class="pingluntu">
+                    <ul class="pingluntu">
+                        <li>
+                            <img src="commuimages/ping_01.jpg">
+                        </li>
+                        <li>
+                            <img src="commuimages/ping_02.jpg">
+                        </li>
+                        <li>
+                            <img src="commuimages/ping_03.jpg">
+                        </li>
+                    </ul>
+                </div>
+                <!--爱心点赞-->
+                <div class="feed" id="feed1" style="width: 100px;height: 40px; margin-top: 32px; float: left;">
+                    <div class="heart lf " id="like1" rel="like"></div> <div class="likeCount" id="likeCount1">15</div>
+                </div>
+                <!--时间评论浏览量-->
+                <div class="tubiao"></div>
+                <span class="zi">2017-05-11</span>
+                <div class="tubiao tubiao2"></div>
+                <span class="zi zi2">52</span>
+                <div class="tubiao tubiao3"></div>
+                <span class="zi zi3">118</span>
+        </li>
+        <li style="height: 145px;">
+            <!--左边头像-->
+            <div class="left"><img src="commuimages/tou_03.jpg"></div>
+            <!--右边内容-->
+            <div class="right">
+                <!--网名-->
+                <p class="wangming">爱上黄昏</p>
+                <!--帖子标题-->
+                <p class="neirong">面朝大海，春暖花开，带上家人去感受大海</p>
+                <!--爱心点赞-->
+                <div class="feed" id="feed1" style="width: 100px;height: 40px; margin-top: 32px; float: left;">
+                    <div class="heart lf " id="like1" rel="like"></div> <div class="likeCount" id="likeCount1">15</div>
+                </div>
+                <!--时间评论浏览量-->
+                <div class="tubiao"></div>
+                <span class="zi">2017-03-22</span>
+                <div class="tubiao tubiao2"></div>
+                <span class="zi zi2">1145</span>
+                <div class="tubiao tubiao3"></div>
+                <span class="zi zi3">14000</span>
+        </li>
+        <li style="height: 229px;">
+            <!--左边头像-->
+            <div class="left"><img src="commuimages/tou_04.jpg"></div>
+            <!--右边内容-->
+            <div class="right">
+                <!--网名2-->
+                <p class="wangming">CoCo小姐</p>
+                <p class="neirong">光影佤乡 雾美沧源</p>
+                <!--评论图-->
+                <div class="pingluntu">
+                    <ul class="pingluntu">
+                        <li>
+                            <img src="commuimages/ping_04.jpg">
+                        </li>
+                        <li>
+                            <img src="commuimages/ping_05.jpg">
+                        </li>
+                        <li>
+                            <img src="commuimages/ping_06.jpg">
+                        </li>
+                    </ul>
+                </div>
+                <!--爱心点赞-->
+                <div class="feed" id="feed1" style="width: 100px;height: 40px; margin-top: 32px; float: left;">
+                    <div class="heart lf " id="like1" rel="like"></div> <div class="likeCount" id="likeCount1">15</div>
+                </div>
+                <!--时间评论浏览量-->
+                <div class="tubiao"></div>
+                <span class="zi">2017-03-20</span>
+                <div class="tubiao tubiao2"></div>
+                <span class="zi zi2">65</span>
+                <div class="tubiao tubiao3"></div>
+                <span class="zi zi3">96</span>
+        </li>
+        <li style="height: 145px;">
+            <!--左边头像-->
+            <div class="left"><img src="commuimages/tou_05.jpg"></div>
+            <!--右边内容-->
+            <div class="right">
+                <!--网名-->
+                <p class="wangming">微风轻轻的吹</p>
+                <!--帖子标题-->
+                <p class="neirong">我们一起去西藏</p>
+                <!--爱心点赞-->
+                <div class="feed" id="feed1" style="width: 100px;height: 40px; margin-top: 32px; float: left;">
+                    <div class="heart lf " id="like1" rel="like"></div> <div class="likeCount" id="likeCount1">15</div>
+                </div>
+                <!--时间评论浏览量-->
+                <div class="tubiao"></div>
+                <span class="zi">2017-03-12</span>
+                <div class="tubiao tubiao2"></div>
+                <span class="zi zi2">08</span>
+                <div class="tubiao tubiao3"></div>
+                <span class="zi zi3">23</span>
+        </li>
+        <li style="height: 229px;">
+            <!--左边头像-->
+            <div class="left"><img src="commuimages/tou_06.jpg"></div>
+            <!--右边内容-->
+            <div class="right">
+                <!--网名2-->
+                <p class="wangming">卡卡168</p>
+                <p class="neirong">游贵州青山绿水，感受黔之风土人情</p>
+                <!--评论图-->
+                <div class="pingluntu">
+                    <ul class="pingluntu">
+                        <li>
+                            <img src="commuimages/ping_07.jpg">
+                        </li>
+                        <li>
+                            <img src="commuimages/ping_08.jpg">
+                        </li>
+                    </ul>
+                </div>
+                <!--爱心点赞-->
+                <div class="feed" id="feed1" style="width: 100px;height: 40px; margin-top: 32px; float: left;">
+                    <div class="heart lf " id="like1" rel="like"></div> <div class="likeCount" id="likeCount1">15</div>
+                </div>
+                <!--时间评论浏览量-->
+                <div class="tubiao"></div>
+                <span class="zi">2017-05-11</span>
+                <div class="tubiao tubiao2"></div>
+                <span class="zi zi2">52</span>
+                <div class="tubiao tubiao3"></div>
+                <span class="zi zi3">118</span>
+        </li>
+        <li style="border-bottom: none; height: 48px;">
+            <!--页码-->
+            <div class="yema">
+                <ul>
+                    <li><a href="#">&lt</a></li>
+                    <li ><a class="lvse" href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">6</a></li>
+                    <li><a href="#">7</a></li>
+                    <li><a href="#">8</a></li>
+                    <li><a href="#">9</a></li>
+                    <li><a href="#">&gt</a></li>
+                </ul>
+            </div>
+        </li>
+        <!--发帖-->
+        <li style="height: 382px; padding-left: 42px;">
+            <!--富文本框-->
+            <div class="hero-unit" style="background-color:#fff; border: 1px solid #ddd; padding: 0px;height: 50px; width: 800px;margin-top: 5px;margin-bottom: 10px;">
+                <!--工具条-->
+                <div class="btn-toolbar" data-role="editor-toolbar" data-target="#editor">
+                    <!--小按钮之字体样式-->
+                    <div class="btn-group" >
+                        <a class="btn dropdown-toggle" data-toggle="dropdown" title="Font">
+                            <i class="icon-font"></i>
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu"></ul>
+                    </div>
+                    <!--BISU按钮-->
+                    <div class="btn-group">
+                        <a class="btn" data-edit="bold" title="Bold (Ctrl/Cmd+B)"><i class="icon-bold"></i></a>
+                        <a class="btn" data-edit="italic" title="Italic (Ctrl/Cmd+I)"><i class="icon-italic"></i></a>
+                        <a class="btn" data-edit="strikethrough" title="Strikethrough"><i class="icon-strikethrough"></i></a>
+                        <a class="btn" data-edit="underline" title="Underline (Ctrl/Cmd+U)"><i class="icon-underline"></i></a>
+                    </div>
+                    <!--列表按钮-->
+                    <div class="btn-group">
+                        <a class="btn" data-edit="insertunorderedlist" title="Bullet list"><i class="icon-list-ul"></i></a>
+                        <a class="btn" data-edit="insertorderedlist" title="Number list"><i class="icon-list-ol"></i></a>
+                        <a class="btn" data-edit="outdent" title="Reduce indent (Shift+Tab)"><i class="icon-indent-left"></i></a>
+                        <a class="btn" data-edit="indent" title="Indent (Tab)"><i class="icon-indent-right"></i></a>
+                    </div>
+                    <!--对齐方式按钮-->
+                    <div class="btn-group">
+                        <a class="btn" data-edit="justifyleft" title="Align Left (Ctrl/Cmd+L)"><i class="icon-align-left"></i></a>
+                        <a class="btn" data-edit="justifycenter" title="Center (Ctrl/Cmd+E)"><i class="icon-align-center"></i></a>
+                        <a class="btn" data-edit="justifyright" title="Align Right (Ctrl/Cmd+R)"><i class="icon-align-right"></i></a>
+                        <a class="btn" data-edit="justifyfull" title="Justify (Ctrl/Cmd+J)"><i class="icon-align-justify"></i></a>
+                    </div>
+                    <!--图片按钮-->
+                    <div class="btn-group" style="width: 200px;">
+                        <a class="btn" title="Insert picture (or just drag & drop)" id="pictureBtn"><i class="icon-picture"></i></a>
+                        <input type="file" data-role="magic-overlay" data-target="#pictureBtn" data-edit="insertImage" />
+                    </div>
+                </div>
+                <input type="text" data-edit="inserttext" id="voiceBtn" x-webkit-speech="">
+            </div>
+            <!--编辑文本区域-->
+                <div id="editor" style="border-color: #ddd;color: #ddd;">
+                    谈谈您的美丽乡村之旅的吧！
+                </div>
+            <!--我要发帖小标志-->
+            <div class="boxfa">
+                我要发帖
+            </div>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<!--页脚-->
+<footer class="footer">
+    <div class="footer_top">
+        <ul>
+            <li>
+                <a href="#">客户热线</a>
+                <img class="hao" src="images/phone.png">
+                <div class="lianxi">151-8587-5002<div>
+            </li>
+            <li><b></b>
+                <a href="#">关注我们</a>
+                <img class="hao1" src="images/wechat.png">
+                <img class="hao2" src="images/erweima.png">
+                <div class="lianxi1">微信公众号</div>
+            </li>
+            <li><b></b>
+                <a href="#">在线咨询</a>
+                <img class="hao" src="images/qqlogo.png">
+                <div class="lianxi2">2247312625</div>
+            </li>
+        </ul>
+    </div>
+    <div class="footer_bottom">
+        友情链接：
+        <a href="#">中国美丽乡村网</a>
+        <a href="#">携程</a>
+        <a href="http://www.cthy.com/">中国旅游信息网</a>
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        <a href="#">出游必备</a>&nbsp&nbsp<a href="#">安全事项</a>
+        <br>
+        COPYRIGHT  &copyright 2017 杭州电子科技大学数字媒体与艺术设计学院 浙 ICP备12022451号-1
+    </div>
+
+</footer>
+<div class="_top">
+    TOP
+</div>
+<!--回顶部功能-->
+<script>
+    $(function() {
+        $(window).scroll(function() {
+            var _top = $(window).scrollTop();
+            if (_top > 300) {
+                $('._top').fadeIn(600);
+            } else {
+                $('._top').fadeOut(600);
+            }
+        });
+        $("._top").click(function() {
+            $("html,body").animate({
+                scrollTop: 0
+            }, 500);
+        });
+    });</script>
+<script src="js/jquery-1.11.0.min.js" type="text/javascript"></script>
+<!--滚动视频功能-->
+<script>
+    $(document).ready(function()
+    {
+
+        $('body').on("click",'.heart',function()
+        {
+
+            var A=$(this).attr("id");
+            var B=A.split("like");
+            var messageID=B[1];
+            var C=parseInt($("#likeCount"+messageID).html());
+            $(this).css("background-position","")
+            var D=$(this).attr("rel");
+
+            if(D === 'like')
+            {
+                $("#likeCount"+messageID).html(C+1);
+                $(this).addClass("heartAnimation").attr("rel","unlike");
+
+            }
+            else
+            {
+                $("#likeCount"+messageID).html(C-1);
+                $(this).removeClass("heartAnimation").attr("rel","like");
+                $(this).css("background-position","left");
+            }
+
+
+        });
+
+
+    });
+</script>
+<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+<script src="js/index.js"></script>
+<!--富文本-->
+<script>
+
+    $(function(){
+
+        function initToolbarBootstrapBindings() {
+
+            var fonts = ['Serif', 'Sans', 'Arial', 'Arial Black', 'Courier',
+
+                    'Courier New', 'Comic Sans MS', 'Helvetica', 'Impact', 'Lucida Grande', 'Lucida Sans', 'Tahoma', 'Times',
+
+                    'Times New Roman', 'Verdana'],
+
+                fontTarget = $('[title=Font]').siblings('.dropdown-menu');
+
+            $.each(fonts, function (idx, fontName) {
+
+                fontTarget.append($('<li><a data-edit="fontName ' + fontName +'" style="font-family:\''+ fontName +'\'">'+fontName + '</a></li>'));
+
+            });
+
+            $('a[title]').tooltip({container:'body'});
+
+            $('.dropdown-menu input').click(function() {return false;})
+
+                .change(function () {$(this).parent('.dropdown-menu').siblings('.dropdown-toggle').dropdown('toggle');})
+
+                .keydown('esc', function () {this.value='';$(this).change();});
+
+
+
+            $('[data-role=magic-overlay]').each(function () {
+
+                var overlay = $(this), target = $(overlay.data('target'));
+
+                overlay.css('opacity', 0).css('position', 'absolute').offset(target.offset()).width(target.outerWidth()).height(target.outerHeight());
+
+            });
+
+            if ("onwebkitspeechchange"  in document.createElement("input")) {
+
+                var editorOffset = $('#editor').offset();
+
+                $('#voiceBtn').css('position','absolute').offset({top: editorOffset.top, left: editorOffset.left+$('#editor').innerWidth()-35});
+
+            } else {
+
+                $('#voiceBtn').hide();
+
+            }
+
+        };
+
+        function showErrorAlert (reason, detail) {
+
+            var msg='';
+
+            if (reason==='unsupported-file-type') { msg = "Unsupported format " +detail; }
+
+            else {
+
+                console.log("error uploading file", reason, detail);
+
+            }
+
+            $('<div class="alert"> <button type="button" class="close" data-dismiss="alert">&times;</button>'+
+
+                '<strong>File upload error</strong> '+msg+' </div>').prependTo('#alerts');
+
+        };
+
+        initToolbarBootstrapBindings();
+
+        $('#editor').wysiwyg({ fileUploadError: showErrorAlert} );
+
+        window.prettyPrint && prettyPrint();
+
+    });
+
+</script>
+</body>
+</html>

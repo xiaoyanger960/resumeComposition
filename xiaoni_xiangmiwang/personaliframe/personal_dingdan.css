@@ -1,0 +1,203 @@
+/*通用样式*/
+body{
+    font-size:16px;
+    color:#000;
+    margin:0;
+    padding:0;
+    overflow-x: hidden;
+}
+ul,p,h1,h2,h3,h4,h5,h6,dl,dd{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+.white{
+    font-color:#fff;
+    font-size:17px;
+}
+.lf{float:left;}
+.rt{float:right;}
+.clear{clear:both;}
+img{vertical-align:middle;}
+a{
+    color:#000;
+    text-decoration:none;
+}
+a:hover {
+    color:#7702BA;
+    text-decoration: none;
+}
+/*右边的待处理页面*/
+div.right{
+    width:718px;
+    height:798px;
+    border:1px solid #ddd;
+    margin-left:10px;
+}
+div.right span{
+    line-height:30px;
+}
+/*所有彩色标题的共同样式*/
+div.right div.biaoti{
+    width:694px;
+    height:23px;
+    border-bottom:1px solid #ddd;
+}
+/*待处理模块*/
+div.right div.chuli{
+    width:694px;
+    height:778px;
+    margin-left:12px;
+    margin-right:12px;
+    margin-top:4px;
+}
+div.right div.chuli div.biaoti h4{
+    color: #82D009;
+    width:72px;
+    padding-bottom:1px;
+    margin-left:-1px;
+    border-bottom:3px solid #82D009;
+}
+/*第一份待处理的订单*/
+div.right div.chuli div.firstding{
+    width:100%;
+    height:394px;
+    border:1px solid #C2DB83;
+    background-color:#FFF4FF;
+    margin-top:15px;
+}
+div.right div.chuli div.firstding div.shopname{
+    width:670px;
+    height:23px;
+    border-bottom:1px solid #C2DB83;
+    margin:0px auto;
+}
+div.right div.chuli div.firstding div.shopname p{
+    margin-left:-1px;
+}
+div.right div.chuli div.firstding div.food{
+    width:670px;
+    margin:0px auto;
+    padding-top:10px;
+    height:309px;
+    border-bottom:1px solid #C2DB83;
+}
+div.right div.chuli div.firstding div.food div.food1{
+    width:670px;
+    height:136px;
+    clear: both;
+}
+div.right div.chuli div.firstding div.food div.food1 div.food1_left{
+    float: left;
+}
+div.right div.chuli div.firstding div.food div.food1 div.food1_middle{
+    float: left;
+    padding-left:20px;
+    width:260px;
+    height:68px;
+}
+div.right div.chuli div.firstding div.food div.food1 div.food1_middle p{
+    color: #807A80;
+    font-size:13px;
+    margin-top:44px;
+}
+div.right div.chuli div.firstding div.food div.food1 div.food1_right{
+    float: left;
+    padding-left:60px;
+    text-align: center;
+    padding-top:6px;
+    font-size:14px;
+    width:110px;
+    height:68px;
+}
+div.right div.chuli div.firstding div.food div.food1 div.food1_right p{
+    text-align: center;
+    margin:0px auto;
+}
+div.right div.chuli div.firstding div.food div.food1 div.food1_right p.yunfei{
+    color: #807A80;
+    margin-top:5px;
+}
+div.right div.chuli div.firstding div.food div.food1 div.food1_right p.cancle{
+     margin-top:58px;
+ }
+div.right div.chuli div.firstding div.food div.food1 div.food1_right p.cancle a{
+    color: #807A80;
+}
+/*订单客服*/
+div.right div.chuli div.firstding div.kefu{
+    width:670px;
+    height:50px;
+    margin:0px auto;
+}
+div.right div.chuli div.firstding div.kefu input{
+    width:52px;
+    height:30px;
+    border:1px solid #C2DB83;
+    -webkit-border-radius:11px;
+    -moz-border-radius:11px;
+    border-radius:11px;
+    background-color:#FFF4FF;
+    font-size:14px;
+    font-family: "Microsoft YaHei";
+    margin-top:10px;
+    float: left;
+}
+div.right div.chuli div.firstding div.kefu input:focus{
+    background-color:#c2db83;
+    outline:none;
+}
+div.right div.chuli div.firstding div.kefu div.maijia{
+    width:27px;
+    height:20px;
+    float: left;
+    margin-left:182px;
+    margin-top:11px;
+}
+div.right div.chuli div.firstding div.kefu div.maijia img{
+    width:100%;
+}
+div.right div.chuli div.firstding div.kefu span{
+    float: left;
+    line-height:50px;
+    margin-left:4px;
+    font-size:14px;
+}
+div.right div.chuli div.firstding div.kefu p{
+    float: left;
+    line-height:50px;
+    margin-left:249px;
+    font-size:14px;
+}
+/*小页码*/
+div.yema{
+    width:400px;
+    height:30px;
+    margin-top:30px;
+    margin-left:489px;
+    float: left;
+}
+div.yema ul li{
+    float: left;
+    margin-left:10px;
+    list-style: none;
+}
+div.yema ul li a{
+    display: inline-block;
+    border:1px solid #ddd;
+    width:22px;
+    height:22px;
+    color:#C6C6C6;
+    text-align: center;
+    vertical-align: middle;
+}
+.lvse{
+    background-color:#97DD01;
+    color:#c6c6c6;
+    border:1px solid #ddd;
+}
+div.yema ul li a:hover{
+    background-color:#97DD01;
+    color:#c6c6c6;
+    border:1px solid #ddd;
+}

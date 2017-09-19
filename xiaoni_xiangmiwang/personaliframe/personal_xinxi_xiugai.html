@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人中心我的信息信息修改</title>
+    <link rel="stylesheet" type="text/css" href="personal_xinxi_xiugai.css">
+    <script>
+        /*written by keefelu*/
+        window.onload = function () {
+
+            var aslt = document.getElementsByTagName('select')[1];
+
+            var aotn = aslt.getElementsByTagName('option')[1];
+
+            aslt.onchange = function () {
+
+                turnCity();
+
+            }
+
+        };
+
+
+        function turn() {
+
+            var provinceList = new Array();
+
+            provinceList['请选择国家'] = ["请选择省份"];
+
+            provinceList['中国'] = ["请选择省份", "浙江", "江苏", "福建", "广东", "湖南", "四川", "云南", "河北", "天津", "黑龙江", "辽宁", "湖北", "海南", "甘肃", "贵州", "江西"];
+
+            provinceList['美国'] = ["请选择省份", "11", "22", "33"];
+
+            provinceList['英国'] = ["请选择省份", "44", "55"];
+
+            var province = document.forms[0].province;//文档中的第一个省份；
+
+            province.options.length = 0;//把province下拉列表的选项清0
+
+            var index = document.forms[0].country.value; //文档中的第一个国家；
+
+            province.options.length = 0;
+
+            for (var j in provinceList[index]) {
+
+                newOption = new Option(provinceList[index][j], provinceList[index][j]);
+
+                province.options.add(newOption);
+
+                var city = document.forms[0].city;//文档中的第一个市区；
+
+                city.options.length = 1;//把city下拉列表的选项清0
+
+            }
+
+        }
+
+        function turnCity() {
+
+            var cityList = new Array();
+
+            cityList['请选择省份'] = ["请选择城市"];
+
+            cityList['..'] = ["....."];
+
+            cityList['浙江'] = ["请选择城市", "杭州", "宁波", "温州", "绍兴", "金华", "湖州", "嘉兴"];
+
+            cityList['江苏'] = ["请选择城市", "南京", "苏州", "徐州", "无锡", "常州", "镇江"];
+
+            cityList['福建'] = ["请选择城市", "福州市", "厦门市", "龙岩市", "钓鱼岛", "冲绳", "三沙市", "..."];
+
+            cityList['11'] = ["请选择城市", "aa", "bb", "cc"];
+
+            cityList['22'] = ["请选择城市", "dd", "ee", "ff"];
+
+            cityList['33'] = ["请选择城市", "gg"];
+
+            cityList['44'] = ["请选择城市", "hh11", "iiaa", "jjcc"];
+
+            cityList['55'] = ["请选择城市", "kk1234", "ll4567", "mm8910"];
+
+            var city = document.forms[0].city;//文档中的第一个市区；
+
+            city.options.length = 0;//把city下拉列表的选项清0
+
+            var index = document.forms[0].province.value;
+
+            city.options.length = 0;
+
+            for (var j in cityList[index]) {
+
+                newOption = new Option(cityList[index][j], cityList[index][j]);
+
+                city.options.add(newOption);
+
+            }
+
+        }
+
+    </script>
+</head>
+<body>
+<!--个人信息-->
+<div class="right">
+    <!--基本信息-->
+    <div class="jiben">
+        <div class="biaoti">
+            <h4>基本信息修改</h4><br>
+        </div>
+        <span>
+    <form action="#" method="get">
+
+    &nbsp&nbsp&nbsp昵称：<input type="text" value="自在飞花"><br>
+        手机号：<input type="tel" value="15185875111"><br>
+         &nbsp&nbsp&nbsp邮箱：<input type="email" value="2224721324@qq.com"><br>
+            所在地：<select name="country" onchange="turn()">
+
+    <option value="请选择国家">请选择国家</option>
+
+    <option value="中国" selected="selected">中国</option>
+
+    <option value="美国">美国</option>
+
+    <option value="英国">英国</option>
+
+    </select>
+
+    <select name="province">
+
+    <option value="0" selected="selected">浙江</option>
+
+    </select>
+
+    <select name="city">
+
+    <option value="0" selected="selected">杭州</option>
+
+    </select>
+
+        </form>
+    </span>
+    </div>
+    <!--详细信息-->
+    <div class="xiangxi">
+        <div class="biaoti biaoti2">
+            <h4>详细信息修改</h4><br>
+        </div>
+        <form action="#" method="get">
+        <span>姓名：<input type="text" value="王子文"><br>性别：<input type="radio" name="sex" value="man">男
+             <input type="radio" name="sex" value="women" checked="checked">女<br>
+            年龄：<input type="number" value="21"><br>
+            职业：<input type="text" value="学生"><br>
+            爱好：<textarea name="hobby" rows="3" cols="10">跑步，骑行，爬山</textarea><br>
+            热衷的旅游方式：<input type="text" value="步行，骑行"><br>
+            收货地址：
+           <select name="country1" onchange="turn1()">
+
+    <option value="请选择国家">请选择国家</option>
+    <option value="中国" selected="selected">中国</option>
+    <option value="美国">美国</option>
+    <option value="英国">英国</option>
+    </select>
+    <select name="province1">
+    <option value="0" selected="selected">浙江</option>
+        <option value="北京">北京市</option>
+        <option value="浙江省">浙江省</option>
+        <option value="天津市">天津市</option>
+        <option value="安徽省">安徽省</option>
+        <option value="上海市">上海市</option>
+        <option value="福建省">福建省</option>
+        <option value="重庆市">重庆市</option>
+        <option value="江西省">江西省</option>
+        <option value="山东省">山东省</option>
+        <option value="河南省">河南省</option>
+        <option value="湖北省">湖北省</option>
+        <option value="湖南省">湖南省</option>
+        <option value="广东省">广东省</option>
+        <option value="海南省">海南省</option>
+        <option value="山西省">山西省</option>
+        <option value="青海省">青海省</option>
+        <option value="江苏省">江苏省</option>
+        <option value="辽宁省">辽宁省</option>
+        <option value="吉林省">吉林省</option>
+        <option value="台湾省">台湾省</option>
+        <option value="河北省">河北省</option>
+        <option value="贵州省">贵州省</option>
+        <option value="四川省">四川省</option>
+        <option value="云南省">云南省</option>
+        <option value="陕西省">陕西省</option>
+        <option value="甘肃省">甘肃省</option>
+        <option value="黑龙江省">黑龙江省</option>
+
+    </select>
+    <select name="city1">
+    <option value="0" selected="selected">杭州</option>
+
+    </select><br>
+            具体地址：<textarea style="height: 50px;" name="hobby" rows="1"
+                           cols="10">浙江省杭州市江干区下沙镇2号大街杭州电子科技大学生活区</textarea><br>
+            <br>
+        </span>
+        </form>
+    </div>
+    <!--安全设置-->
+    <div class="anquan">
+        <div class="biaoti biaoti3">
+            <h4 style="width: 99px;">安全设置</h4><br>
+            <span>
+                &nbsp&nbsp&nbsp&nbsp支付宝账号：<input type="text" value="6717772990"><br>
+                绑定的手机号：<input type="tel" value="18292103002"><br>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp访问权限：<select style="width: 173px;">
+                <option >允许别人访问我的主页</option>
+                <option>不允许别人访问我的主页</option>
+            </select><br>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp评论点赞：<select>
+                <option>已关闭</option>
+                <option>开启</option>
+            </select><br>
+            </span>
+        </div>
+    </div>
+    <!--提交按钮-->
+    <input class="save" type="submit" value="保存" ></input>
+</div>
+
+</body>
+</html>

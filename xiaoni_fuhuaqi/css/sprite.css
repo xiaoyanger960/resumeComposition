@@ -1,0 +1,61 @@
+main .main-left .tour .tour-img ul li:first-child{
+    background: url(../img/tour01.png) no-repeat 0 0 ;
+    width:293px;
+    height:231px;
+    background-size: cover;
+}
+main .main-left .tour .tour-img ul li:nth-child(2){
+    background: url(../img/tour02.png) no-repeat 0 0 ;
+}
+main .main-left .tour .tour-img ul li:nth-child(3){
+    background: url(../img/tour03.png) no-repeat 0 0 ;
+}
+main .main-left .tour .tour-img ul li:nth-child(4){
+    background: url(../img/tour04.png) no-repeat 0 0 ;
+    width:148px;
+    height:108px;
+    background-size: cover;
+}
+main .main-left .tour .tour-img ul li:nth-child(5){
+    background: url(../img/tour05.png) no-repeat 0 0 ;
+}
+main .main-left .tour .tour-img ul li:nth-child(6){
+    background: url(../img/tour06.png) no-repeat 0 0 ;
+}
+
+
+/*main aside .riverModel .riverModel-content ul li:nth-child(1) a{
+    background: url(../img/model01.png) no-repeat 0 0;
+}
+main aside .riverModel .riverModel-content ul li:nth-child(2) a{
+    background: url(../img/model02.png) no-repeat 0 0;
+}
+main aside .riverModel .riverModel-content ul li:nth-child(3) a{
+    background: url(../img/model03.png) no-repeat 0 0;
+}
+main aside .riverModel .riverModel-content ul li:nth-child(4) a{
+    background: url(../img/model04.png) no-repeat 0 0;
+}
+main aside .riverModel .riverModel-content ul li:nth-child(5) a{
+    background: url(../img/model05.png) no-repeat 0 0;
+}
+main aside .riverModel .riverModel-content ul li:nth-child(6) a{
+    background: url(../img/model06.png) no-repeat 0 0;
+}*/
+
+
+/*main .services .services-content ul li:nth-child(1) a{
+    background: url(../img/service01.png) no-repeat 0 0;
+}
+main .services .services-content ul li:nth-child(2) a{
+    background: url(../img/service02.png) no-repeat 0 0;
+}
+main .services .services-content ul li:nth-child(3) a{
+    background: url(../img/service03.png) no-repeat 0 0;
+}
+main .services .services-content ul li:nth-child(4) a{
+    background: url(../img/service04.png) no-repeat 0 0;
+}
+main .services .services-content ul li:nth-child(5) a{
+    background: url(../img/service05.png) no-repeat 0 0;
+}*/

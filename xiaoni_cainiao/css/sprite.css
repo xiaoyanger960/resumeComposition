@@ -1,0 +1,38 @@
+.add{
+    background: url(../img/shareto.png) no-repeat 0 0 ;
+}
+.qq{
+    background: url(../img/shareto.png) no-repeat -70px 0 ;
+}
+.sina{
+    background: url(../img/shareto.png) no-repeat -92px 0;
+}
+.qqMicroBlog{
+    background: url(../img/shareto.png) no-repeat -114px 0 ;
+}
+.renren{
+    background: url(../img/shareto.png) no-repeat -136px 0 ;
+}
+.octopus{
+    background: url(../img/shareto.png) no-repeat -158px 0 ;
+}
+.number{
+
+    background: url(../img/shareto.png) no-repeat -177px 0 ;
+}
+
+.location{
+    background: url(../img/contaLogo.png) no-repeat 0 0 ;
+}
+.postcode{
+    background: url(../img/contaLogo.png) no-repeat 0 -35px;
+}
+.phone{
+    background: url(../img/contaLogo.png) no-repeat 0 -69px;
+}
+.fax{
+    background: url(../img/contaLogo.png) no-repeat 0 -106px;
+}
+.email{
+    background: url(../img/contaLogo.png) no-repeat 0 -139px;
+}

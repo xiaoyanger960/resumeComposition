@@ -1,0 +1,266 @@
+/*通用样式*/
+body{
+    font-size:16px;
+    color:#000;
+    margin:0;
+    padding:0;
+    overflow-x: hidden;
+}
+ul,p,h1,h2,h3,h4,h5,h6,dl,dd{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+.white{
+    font-color:#fff;
+    font-size:17px;
+}
+.lf{float:left;}
+.rt{float:right;}
+.clear{clear:both;}
+img{vertical-align:middle;}
+a{
+    color:#000;
+    text-decoration:none;
+}
+a:hover {
+    color:#7702BA;
+    text-decoration: none;
+}
+/*个人中心的动态*/
+a{
+    text-decoration: none;
+}
+div.right{
+    width:730px;
+    height:2520px;
+    /*background-color: yellow;*/
+}
+/*景点收藏*/
+div.right #jingdian{
+    width:730px;
+    height:798px;
+    border:1px solid #ddd;
+}
+div.right #jingdian div.jingdian{
+    border-bottom:1px solid #ddd;
+    margin-left:10px;
+    margin-right:20px;
+}
+div.right #jingdian h4.jingdian{
+    color: #7ECE00;
+    margin-top:10px;
+    margin-left:10px;
+    padding-bottom:4px;
+    border-bottom:2px solid #7ECE00;
+    width:70px;
+}
+/*景点图列表*/
+div.right  #jingdian div.jingdianlist{
+    width:708px;
+    height:780px;
+    margin-left:10px;
+    margin-top:10px;
+}
+div.right #jingdian div.jingdianlist ul{
+    float: left;
+    margin:0px;
+    padding:0px;
+}
+div.right #jingdian div.jingdianlist ul li{
+    float: left;
+    display: inline-block;
+    width:230px;
+    height:160px;
+    margin-bottom:5px;
+    margin-right:5px;
+}
+
+div.right #jingdian div.jingdianlist ul li a{
+    color: #fff;
+    font-size:15px;
+}
+div.right #jingdian div.jingdianlist ul li a img{
+    width:100%;
+}
+/*小页码*/
+div.yema{
+    width:400px;
+    height:30px;
+    margin-top:-116px;
+    margin-left:173px;
+    float: left;
+    clear: both;
+}
+div.yema ul li{
+    float: left;
+    margin-left:10px;
+    list-style: none;
+}
+div.yema ul li a{
+    display: inline-block;
+    border:1px solid #ddd;
+    width:22px;
+    height:22px;
+    color:#C6C6C6;
+    text-align: center;
+    vertical-align: middle;
+}
+.lvse{
+    background-color:#8AC223;
+    color:#c6c6c6;
+    border:1px solid #ddd;
+}
+div.yema ul li a:hover{
+    background-color:#8AC223;
+    color:#c6c6c6;
+    border:1px solid #ddd;
+}
+/*我的帖子*/
+div.right div.teizi{
+    width:730px;
+    height:798px;
+    border:1px solid #ddd;
+}
+/*我的帖子标题*/
+div.right div.teizi div.teizi1{
+    border-bottom:1px solid #ddd;
+    margin-left:10px;
+    margin-right:20px;
+}
+div.right div.teizi div.teizi1  h4.teizi2{
+    color: #7ECE00;
+    margin-top:10px;
+    margin-left:10px;
+    padding-bottom:4px;
+    border-bottom:2px solid #7ECE00;
+    width:70px;
+}
+/*我的帖子具体列表*/
+div.right div.teizi ul{
+    list-style-image:url(../personalimages/list_01.jpg);
+    list-style-position:inside;
+    margin-top:20px;
+}
+div.right div.teizi ul li{
+    margin-left:20px;
+    margin-bottom:15px;
+}
+div.right div.teizi ul li a{
+    font-size:18px;
+}
+div.right div.teizi ul li a:hover{
+    color: #8822C4;
+}
+/*4个小图标*/
+div.right div.teizi ul li div.tubiao{
+    width:700px;
+    height:40px;
+    margin-top:10px;
+}
+div.right div.teizi ul li div.tubiao div.tubiao1{
+    width:40px;
+    height:40px;
+    background: url(../commuimages/logo.png) no-repeat 2px 0px;
+    overflow: hidden;
+    float: left;
+}
+div.right div.teizi ul li div.tubiao div.tubiao2{
+    background: url(../commuimages/logo.png) no-repeat -50px 1px;
+    float: left;
+}
+div.right div.teizi ul li div.tubiao div.tubiao3{
+    background: url(../commuimages/logo.png) no-repeat -51px -32px;
+    float: left;
+}
+div.right div.teizi ul li div.tubiao div.tubiao4{
+    background: url(../commuimages/logo.png) no-repeat -97px -1px;
+    float: left;
+}
+/*没点赞的爱心图*/
+div.right div.teizi ul li div.tubiao div.meidianzan{
+    background: url(../commuimages/logo.png ) no-repeat 1px -33px;
+}
+div.right div.teizi ul li div.tubiao div.zi{
+    float: left;
+    line-height:40px;
+    color: #d0d3d7;
+    margin-right:80px;
+}
+/*我的评论*/
+div.pinglun{
+    width:730px;
+    height:798px;
+    border:1px solid #ddd;
+}
+div.right div.pinglun div.pinglunbiaoti{
+    border-bottom:1px solid #ddd;
+    margin-left:10px;
+    margin-right:20px;
+}
+div.right div.pinglun  div.pinglunbiaoti  h4.pinglunbiao{
+    color: #7ECE00;
+    margin-top:10px;
+    margin-left:10px;
+    padding-bottom:4px;
+    border-bottom:2px solid #7ECE00;
+    width:70px;
+}
+/*具体的评论框*/
+div.right div.comment{
+    width:700px;
+    height:157px;
+    background: #effed4;
+    margin-left:10px;
+    margin-top:10px;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    border-radius:10px;
+}
+/*其他网友的帖子*/
+div.right div.comment div.top{
+    width:690px;
+    height:96px;
+    margin-left:15px;
+}
+div.right div.comment div.top div.smallleft{
+    float: left;
+    width:100px;
+    height:80px;
+    margin-top:10px;
+}
+div.right div.comment div.top div.smallleft img{
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    border-radius:50%;
+    width:68%;
+}
+div.right div.comment div.top div.smallright{
+    float: left;
+    margin-top:20px;
+    margin-left:-15px;
+}
+div.right div.comment div.top div.smallright p.wangming{
+    font-size:15px;
+    color: #C4C6D1;
+}
+div.right div.comment div.top div.smallright p.neirong{
+    font-size:18px;
+    line-height:30px;
+}
+/*本人的回复*/
+div.right div.comment div.bottom{
+    width:680px;
+    height:60px;
+}
+div.right div.comment div.bottom div.ziji{
+    width:82px;
+    height:60px;
+    color: #61b024;
+    vertical-align: top;
+    font-size:15px;
+    float: left;
+    margin-left:10px;
+}
+
+

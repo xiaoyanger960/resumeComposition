@@ -1,0 +1,118 @@
+/*通用样式*/
+body{
+    font-size:16px;
+    color:#000;
+    margin:0;
+    padding:0;
+    overflow-x: hidden;
+}
+ul,p,h1,h2,h3,h4,h5,h6,dl,dd{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+.white{
+    font-color:#fff;
+    font-size:17px;
+}
+.lf{float:left;}
+.rt{float:right;}
+.clear{clear:both;}
+img{vertical-align:middle;}
+a{
+    color:#000;
+    text-decoration:none;
+}
+a:hover {
+    color:#7702BA;
+    text-decoration: none;
+}
+/*右边个人信息*/
+div.right{
+    width:718px;
+    height:798px;
+    border:1px solid #ddd;
+    margin-left:10px;
+}
+div.right span{
+    line-height:30px;
+}
+/*所有彩色标题的共同样式*/
+div.right div.biaoti{
+    width:694px;
+    height:23px;
+    border-bottom:1px solid #ddd;
+}
+/*基本信息*/
+div.right div.jiben{
+    width:694px;
+    height:150px;
+    margin-left:12px;
+    margin-right:12px;
+    margin-top:4px;
+}
+div.right div.jiben h4{
+    color: #82D009;
+    width:72px;
+    padding-bottom:1px;
+    margin-left:-1px;
+    border-bottom:3px solid #82D009;
+}
+/*详细信息*/
+div.right div.xiangxi{
+    width:694px;
+    height:238px;
+    margin-left:12px;
+    margin-right:12px;
+    margin-top:4px;
+}
+div.right div.xiangxi h4{
+    color: #1F82F0;
+    width:72px;
+    padding-bottom:1px;
+    margin-left:-1px;
+    border-bottom:3px solid #1F82F0;
+}
+/*详细信息*/
+div.right div.xiangxi{
+    width:694px;
+    height:238px;
+    margin-left:12px;
+    margin-right:12px;
+    margin-top:4px;
+}
+div.right div.xiangxi h4{
+    color: #1F82F0;
+    width:72px;
+    padding-bottom:1px;
+    margin-left:-1px;
+    border-bottom:3px solid #1F82F0;
+}
+/*安全设置*/
+div.right div.anquan{
+    width:694px;
+    height:153px;
+    margin-left:12px;
+    margin-right:12px;
+    margin-top:4px;
+}
+div.right div.anquan h4{
+    color: #C72FCB;
+    width:72px;
+    padding-bottom:1px;
+    margin-left:-1px;
+    border-bottom:3px solid #C72FCB;
+}
+/*信息修改*/
+div.right p{
+    font-size:17px;
+    text-decoration: underline;
+    margin-top:10px;
+    text-align: right;
+    margin-right:10px;
+    margin-bottom:10px;
+}
+div.right p a:link{
+    color: #c4c4c4;
+}
+

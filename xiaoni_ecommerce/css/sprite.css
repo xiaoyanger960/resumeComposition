@@ -1,0 +1,16 @@
+.dot{
+    background: url(../img/dot.png) no-repeat 0 0;
+}
+.phone{
+    background: url(../img/headerPhone.jpg) no-repeat 0 0;
+
+}
+.help{
+    background: url(../img/headerHelp.jpg) no-repeat 0 0;
+}
+.Canada{
+    background: url(../img/headerLang.jpg) no-repeat 0 0;
+}
+.America{
+    background: url(../img/headerLang.jpg) no-repeat -39px 0;
+}

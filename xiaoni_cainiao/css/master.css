@@ -1,0 +1,465 @@
+.wrap{
+    width:980px;
+    margin:0 auto;
+    overflow: hidden;
+    font-family: "宋体";
+}
+
+/* for header */
+.headerOut {
+    width: 100%;
+    height: 145px;
+    background: url(../img/headerOut.png) repeat-x 0 0;
+    position: absolute;
+    left:0;
+    top:0;
+    z-index: -100;
+}
+.header{
+    width:100%;
+    height:145px;
+    background: url(../img/headerBg.png) no-repeat 0 0 ;
+}
+.header .lang{
+    float: right;
+}
+.header .lang a{
+    float: right;
+    margin-top:20px;
+    margin-left:19px;
+    margin-right:29px;
+    color: #44b944;
+}
+.header .nav{
+    width:980px;
+    height:47px;
+    float: right;
+    margin-top: 62px;
+    margin-right:3px;
+}
+.header .nav ul li {
+    float: left;
+}
+.header .nav ul li a{
+    display: block;
+    width:119px;
+    margin-right:-11px;
+    height:44px;
+    padding-top:3px;
+    line-height: 47px;
+    text-align: center;
+    color: #fff;
+    font-size: 15px;
+}
+.header .nav ul li a:hover,
+.header .nav ul li.navCurrent a
+{
+    background: url(../img/navHover.png) no-repeat 0 0 ;
+}
+
+/*  for banner */
+.banner{
+    width:980px;
+    height:352px;
+    position: relative;
+    overflow: hidden;
+}
+.banner ul{
+    width:3960px;
+    height:352px;
+    position: absolute;
+    left:0;
+    top:0;
+}
+.banner ul li{
+    width:980px;
+    height:352px;
+    float: left;
+   /* position: absolute;
+    top:0;
+    left:0;
+    opacity: 0;
+    filter: alpha(opacity = 0);*/
+}
+.banner ul li.current{
+    opacity: 1;
+    filter: alpha(opacity = 100);
+}
+.banner ul li img{
+    width:980px;
+    height:352px;
+}
+.banner .leftbanner{
+    width:50%;
+    height:352px;
+    position: absolute;
+    left:0;
+    top:0;
+    z-index: 5;
+}
+.banner .rightbanner{
+    width:50%;
+    height:352px;
+    position: absolute;
+    right:0;
+    top:0;
+    z-index:4;
+}
+.banner .leftbtn{
+    position: absolute;
+    width:54px;
+    height:54px;
+    left:0;
+    top:50%;
+    margin-top:-27px;
+    z-index:10;
+    background: url(../img/bannerLeft.png) no-repeat 0 0 ;
+    display: none;
+}
+.banner .rightbtn{
+    position: absolute;
+    right:0;
+    top:50%;
+    width:54px;
+    height:54px;
+    margin-top:-27px;
+    z-index:10;
+    background: url(../img/bannerRight.png) no-repeat 0 0 ;
+    display: none;
+}
+
+/* for leaguer */
+.leaguer{
+    width:100%;
+    height:85px;
+    background: url(../img/leaguer.png) no-repeat 0 0 ;
+    position: relative;
+}
+.leaguer form{
+    float: left;
+}
+.leaguer form input:nth-child(1){
+    margin-left:158px;
+    margin-right:33px;
+}
+.leaguer form input{
+    width:135px;
+    height:24px;
+    margin-top:17px;
+    margin-right:8px;
+    border:none;
+    background: transparent;
+
+}
+.leaguer form input:nth-child(2){
+    width:117px;
+}
+.leaguer form input[type=submit]{
+    width:45px;
+}
+.leaguer form a{
+    font-size: 15px;
+    color:#4a4a4a;
+    display: inline-block;
+    margin-top: 17px;
+}
+.leaguer .modal{
+    position: fixed;
+    left:0;
+    top:0;
+    right:0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    z-index:100;
+    display: none;
+}
+.leaguer .modal .modalDialog{
+    width:360px;
+    height:700px;
+    margin:200px auto;
+}
+.leaguer .modal .modalDialog .modalContent{
+    background: url(../img/bodyBg.png) repeat-y 0 0 ;
+    border-radius: 10px;
+    text-align: left;
+    font-size:14px;
+    overflow: hidden;
+
+}
+.leaguer .modal .modalDialog .modalContent h3{
+    background: #2D951A;
+    font-size:25px;
+    height:30px;
+    line-height: 30px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: #fff;
+    padding-left:5px;
+
+}
+.leaguer .modal .modalDialog .modalContent h3 span{
+    float: right;
+    color: #fff;
+    cursor: pointer;
+}
+.leaguer .modal .modalDialog .modalContent b{
+    float: left;
+    margin-left:30px;
+    margin-top:15px;
+}
+.leaguer .modal .modalDialog .modalContent input{
+    float: left;
+    width:300px;
+    margin-top:15px;
+    margin-left:30px;
+    height:25px;
+    margin-bottom: 10px;
+}
+.leaguer .modal .modalDialog .modalContent input[type=submit],
+.leaguer .modal .modalDialog .modalContent input[type=reset]{
+    color: #fff;
+    font-size:14px;
+    background-color: deepskyblue;
+    border:none;
+    outline: none;
+    height:30px;
+    width:302px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+.leaguer .modal .modalDialog .modalContent input[type=submit]:hover,
+.leaguer .modal .modalDialog .modalContent input[type=reset]:hover{
+    background-color: blue;
+}
+
+.leaguer .share{
+    width:225px;
+    height:16px;
+    float: right;
+    margin-top:23px;
+    margin-right: 2px;
+    position: absolute;
+    top:0;
+    right:-192px;
+}
+.leaguer .share ul{
+    float: left;
+}
+.leaguer .share ul li{
+    float: left;
+}
+.leaguer .share ul li a{
+    display: block;
+    height:16px;
+    width:16px;
+    margin-right:6px;
+}
+.leaguer .share ul li:nth-child(1) a{
+    margin-right:52px;
+}
+.leaguer .share ul li:last-child a{
+    width:41px;
+    height:16px;
+}
+
+/* for main */
+.main{
+    width:100%;
+}
+.main .mainComp,.main .mainNews,.main .mainConta{
+    height:246px;
+
+}
+.main .mainComp{
+    width:293px;
+    float: left;
+    padding-right:20px;
+}
+.main  .greenBg{
+    width:85px;
+    height:61px;
+    background: url(../img/greenIcon.png) no-repeat 0 0 ;
+    display: inline-block;
+}
+.main  h4{
+    color: #fff;
+    font-size:17px;
+    display: inline-block;
+    margin-right:9px;
+    margin-left:7px;
+    margin-top:9px;
+}
+.main  span{
+    color: #000;
+    font-size:14px;
+}
+.main .mainComp .compHeader a{
+    width:44px;
+    height:13px;
+    display: inline-block;
+    margin-top:14px;
+    margin-left:47px;
+    background: url(../img/more.png) no-repeat 0 0 ;
+}
+.main .mainComp .comCenter{
+    width:303px;
+    color: #6c6c6c;
+    font-size:12px;
+    line-height: 20px;
+    text-align: justify;
+}
+.main .mainComp .comCenter img{
+    float: left;
+    margin-right: 16px;
+}
+.main .mainNews{
+    float: left;
+    width:406px;
+    background: url(../img/lineBg.png) no-repeat 0 0 ;
+}
+.main .mainNews .compHeader a{
+    width:44px;
+    height:13px;
+    display: inline-block;
+    margin-top:14px;
+    margin-left:157px;
+    background: url(../img/more.png) no-repeat 0 0 ;
+}
+.main .mainNews .newsCenter{
+    padding-left:10px;
+    padding-right:10px;
+}
+.main .mainNews .newsCenter img{
+    margin-right:10px;
+    float: left;
+}
+.main .mainNews .newsCenter .nice{
+    float: left;
+    line-height: 25px;
+}
+.main .mainNews .newsCenter .nice h5{
+    color: #50b540;
+    font-weight: bolder;
+    font-size:12px;
+}
+.main .mainNews .newsCenter .nice p{
+    color: #a8a8a8;
+}
+.main .mainNews .newsCenter .nice p a{
+    color: #50b540;
+}
+.main .mainNews .newsList{
+    padding-left:26px;
+    float: left;
+}
+.main .mainNews .newsList ul{
+    margin-top:10px;
+    margin-left:10px;
+}
+.main .mainNews .newsList ul li{
+    background: url(../img/dot.png) no-repeat 0 0 ;
+    padding-left:12px;
+    color: #6c6c6c;
+    line-height: 12px;
+    height:12px;
+    text-align: left;
+    margin-bottom:20px;
+    width:330px;
+}
+.main .mainNews .newsList ul li span{
+    color: #ababab;
+    font-size:10px;
+    float: right;
+    line-height: 12px;
+}
+.main .mainConta{
+    background: url(../img/lineBg.png) no-repeat 0 0 ;
+    float:left;
+}
+.main .mainConta .contaList{
+    padding-left:10px;
+}
+.main .mainConta .contaList ul li{
+    height:14px;
+    font-size:13px;
+    line-height: 14px;
+    color: #959595;
+    margin-bottom: 14px;
+    padding-left:24px;
+    padding-top:3px;
+}
+.main .productDisplay{
+    width:980px;
+    height:53px;
+    background: url(../img/productDisplay.png ) no-repeat 0 0 ;
+}
+.main .productDisplay .btn{
+    float: right;
+    width:60px;
+    height:53px;
+}
+.main .productDisplay .btn span{
+    float: left;
+    width:25px;
+    height:25px;
+    margin-right: 5px;
+    margin-top:10px;
+    background: url(../img/productBtn.png) no-repeat 0 0 ;
+}
+.main .productDisplay .btn span:nth-child(2){
+    background: url(../img/productBtn.png) no-repeat -30px 0 ;
+}
+.main .product{
+    width:960px;
+    height:165px;
+    margin-bottom:30px;
+    padding:10px;
+    position: relative;
+    overflow: hidden;
+}
+.main .product ul{
+    position: absolute;
+    left:0;
+    height:160px;
+}
+.main .product ul li{
+    float: left;
+    width:176px;
+    height:165px;
+    padding:10px;
+    text-align: center;
+    line-height:20px;
+    font-size:12px;
+    color: #6c6c6c;
+}
+.main .product ul li img{
+    width:176px;
+}
+
+
+.footerOut{
+    width:100%;
+    height:90px;
+    position: absolute;
+    background: url(../img/footerOut.png) repeat-x 0 0 ;
+}
+.footerOut .footer{
+    width:980px;
+    height:74px;
+    margin:0 auto;
+    background: url(../img/footerBg.png) no-repeat 0 0 ;
+    text-align: center ;
+    line-height: 30px;
+    font-size:12px;
+    color: #fff;
+    padding-top: 16px;
+}
+
+
+
+
+
+
+
+
+

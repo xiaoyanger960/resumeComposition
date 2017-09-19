@@ -1,0 +1,75 @@
+/*小通用样式*/
+div.box ul li {
+    list-style-type: none;
+}
+div.box img {
+    width:100%;
+}
+/* 苗寨图 */
+.tb-pic a {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+.tb-thumb {
+    margin-top:10px;
+    margin-left:20px;
+    overflow: hidden;
+}
+.tb-thumb li {
+    background: none repeat scroll 0 0 transparent;
+    float: left;
+    height: 130px;
+    margin-right:20px;
+    overflow: hidden;
+}
+.tb-s310, .tb-s310 a {
+    width: 920px;
+    height: 300px;
+    margin-left:20px;
+}
+.tb-s310 a {
+    *font-size: 271px;
+}
+.tb-s40 a {
+    *font-size: 35px;
+}
+.tb-s40, .tb-s40 a {
+    width: 168px;
+    height: 120px;
+}
+.tb-booth {
+    border: 1px solid #CDCDCD;
+    position: relative;
+    z-index: 1;
+}
+.tb-thumb .tb-selected {
+    background: none repeat scroll 0 0 #A7E135;
+    height: 130px;
+}
+.tb-thumb .tb-selected div {
+    background-color: #FFFFFF;
+    border: medium none;
+}
+.tb-thumb li div {
+    border: 1px solid #CDCDCD;
+}
+div.zoomDiv {
+    z-index: 999;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    width: 300px;
+    height: 300px;
+    background: #ffffff;
+    border: 1px solid #CCCCCC;
+    display: none;
+    text-align: center;
+    overflow: hidden;
+}
+div.zoomMask {
+    position: absolute;
+    background: url("images/mask.png") repeat scroll 0 0 transparent;
+    cursor: move;
+    z-index: 1;
+}

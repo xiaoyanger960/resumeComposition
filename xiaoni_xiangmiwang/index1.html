@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>乡觅网首页</title>
+    <!--<link href="bootstrap-modal/css/bootstrap-modal.css" type="text/css" rel="stylesheet">-->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/set1.css" />
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="http://libs.baidu.com/jquery/1.4.2/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="popcss/normalize.css">
+    <link rel="stylesheet" type="text/css" href="popcss/main.css">
+    <style>
+        a:hover{
+            color: #7702BA;
+        }
+        </style>
+</head>
+<body>
+<!--绿色公共头部-->
+<header id="header">
+    <!--网站宗旨-->
+    <div class="header lf" class="wangzhanbiaoyu">
+        <a href="index.html" >乡觅网，带您寻找美好的乡村之旅</a>
+    </div>
+    <!--搜索框-->
+    <div class="search lf">
+        <input type="search" name="search" placeholder="&nbsp&nbsp搜索您向往的美丽乡村" style="font-size: 14px;">
+        <a href="#">
+            <img src="images/search.jpg">
+        </a>
+    </div>
+    <!--登录与注册-->
+    <!--打开一个模态框-->
+    <a href="#modal1" class="modalLink log white lf">登录</a>
+    <a href="modal1" class="modalLink reg white lf">注册</a>
+    <!--<section class="centerUp">-->
+        <!--<a class="modalLink" href="#modal1">登录啊啊</a>-->
+    <!--</section>-->
+    <div class="overlay"></div>
+    <!--模态框-->
+    <div id="modal1" class="modal">
+        <p class="closeBtn">X</p>
+        <div class="deng_zhu">
+            <h4 class="lv">登录</h4>
+            <h4 class="no">注册</h4>
+        </div>
+        <div class="deng phone">
+            <span>手机号</span><br>
+            <input type="tel" required placeholder="13588235393">
+        </div>
+        <div class="deng psd">
+            <span>密码</span><br>
+            <input type="password" required value="111111111111">
+        </div>
+        <div class="deng rem">
+            <img src="images/rmb.jpg">
+            <span>记住密码</span>
+        </div>
+        <input type="submit" value="登录" class="sub">
+        <a href="index.html"></a>
+        <div class="forget">忘记密码</div>
+        <div class="other">
+            <span>其他登录方式</span>
+            <img src="images/qq_login.png">
+            <img src="images/wechat_login.png">
+            <img src="images/sina_login.png">
+        </div>
+    </div>
+</header>
+<!--导航栏-->
+<div class="nav">
+    <!--导航名称-->
+    <div class="nav1">
+    <ul>
+        <li ><a href="index.html" class="first" style="color: #7702ba;">乡觅首页</a></li>
+        <li><a href="viewplay.html" target="_self">景点玩乐</a></li>
+        <li><a href="xinwen.html" target="_self">新闻资讯</a></li>
+        <li><a href="festi.html" target="_self">民俗节日</a></li>
+        <li><a href="commu.html" target="_blank">乡觅社区</a></li>
+        <li><a href="book.html" target="_self">预定中心</a></li>
+        <li><a href="personal.html" target="_self">个人主页</a></li>
+    </ul>
+    </div>
+    <!--导航装饰三角号-->
+    <div class="sanjiao1">
+        <div class="tri1"> </div>
+        <div class="line1"> </div>
+        <div class="line1">  </div>
+    </div>
+</div>
+<!--banner-->
+<div class="banner">
+    <div class="grid">
+    <ul>
+        <li>
+            <figure class="effect-sadie">
+                <a href="viewplay_miaozhai.html">
+                    <img src="images/banner_011.jpg">
+                    <figcaption>
+                        <h2>西江<span>苗寨</span></h2>
+                        <p>Xijiang<br>miaozhai<p>
+                    </figcaption>
+                </a>
+            </figure>
+        </li>
+        <li>
+            <figure class="effect-sadie">
+                <a href="viewplay_miaozhai.html">
+                    <img src="images/banner_021.jpg">
+                    <figcaption>
+                        <h2>重庆<span>渝北</span></h2>
+                        <p>Chongqing Province<br>Yubei village<p>
+                    </figcaption>
+                </a>
+            </figure>
+        </li>
+        <li>
+            <figure class="effect-sadie">
+                <a href="viewplay_miaozhai.html">
+                    <img src="images/banner_031.jpg">
+                    <figcaption>
+                        <h2>河南<span>平乐</span></h2>
+                        <p>Henan Province<br>Pingle country<p>
+                    </figcaption>
+                </a>
+            </figure>
+        </li>
+        <li>
+            <figure class="effect-sadie">
+            <a href="viewplay_miaozhai.html">
+                <img src="images/banner_041.jpg">
+                <figcaption>
+                    <h2>安徽<span>宏村</span></h2>
+                    <p>Anhui Province<br>Hong village<p>
+                </figcaption>
+            </a>
+        </figure>
+        </li>
+
+        <li>
+            <figure class="effect-sadie">
+            <a href="viewplay_miaozhai.html">
+                <img src="images/banner_051.jpg">
+                <figcaption>
+                    <h2>新疆<span>天山</span></h2>
+                    <p>Xinjiang Province<br>Tulufan<p>
+                </figcaption>
+            </a>
+        </figure>
+        </li>
+        <li>
+            <figure class="effect-sadie">
+            <a href="viewplay_miaozhai.html">
+                <img src="images/banner_061.jpg">
+                <figcaption>
+                    <h2>黎平<span>侗寨</span></h2>
+                    <p>Guizhou Liping<br>Tongzhai<p>
+                </figcaption>
+            </a>
+             </figure>
+        </li>
+    </ul>
+    </div>
+</div>
+<!--热门景点-->
+<div class="view">
+    <!--热门景点小标题-->
+    <div class="xiaobiaoti">
+        <div class="lfg">
+        </div>
+        <div class="hotview">&nbsp &nbsp &nbsp  热门景点</div>
+        <div class="rtg">
+        </div>
+    </div>
+    <!--热门景点图片-->
+    <div class="grid grid1">
+    <ul>
+        <li>
+            <figure class="effect-layla">
+                    <img src="images/view_01.jpg" alt="热门景点01">
+                    <figcaption>
+                        <p>浙江-乌镇</p>
+                   </figcaption>
+            </figure>
+        </li>
+        <li><a href="#"><img src="images/view_02.jpg" alt="热门景点02"></a></li>
+        <li>
+            <figure class="effect-layla">
+                <img src="images/view_031.jpg" alt="热门景点01">
+                <figcaption>
+                    <p>浙江-宏村</p>
+                </figcaption>
+            </figure>
+        </li>
+        <li>
+            <figure class="effect-layla">
+                <img src="images/view_041.jpg" alt="热门景点01">
+                <figcaption>
+                    <p>黎平-侗寨</p>
+                </figcaption>
+            </figure>
+        </li>
+        <li>
+            <figure class="effect-layla">
+                <img src="images/view_051.jpg" alt="热门景点01">
+                <figcaption>
+                    <p>新疆-天山</p>
+                </figcaption>
+            </figure>
+        </li>
+        <li><a href="#"><img src="images/view_06.jpg" alt="热门景点05"></a></li>
+    </ul>
+    </div>
+    <!--文字描述-->
+    <span class="jingxuan">
+        &nbsp精选当季最佳旅游景点<br>
+        为您制定完美的出行计划
+    </span>
+    <span class="fenghuang">
+        &nbsp&nbsp&nbsp凤凰古城位于湖南省怀化<br>
+        市凤凰县，是一座历史悠久的<br>
+        历史名城。小城依山傍水，风<br>
+        景优美。有许多苗族特色古楼。
+    </span>
+</div>
+<!--新闻资讯-->
+<!--新闻框架-->
+<div class="news">
+    <!--新闻小标题-->
+    <div class="xiaobiaoti">
+        <div class="lfg"></div>
+        <div class="news1">&nbsp &nbsp &nbsp  新闻资讯</div>
+        <div class="rtg"></div>
+    </div>
+    <ul class="lf">
+        <li><a href="xinwen_xiangqing.html"><img src="images/news_01.jpg" alt=""></a></li>
+    </ul>
+    <ul class="newsziaaa lf" id="newszi">
+        <li >
+            <a href="xinwen_xiangqing.html">全域旅游最好的去处是升级版乡村旅游
+                <span>2017-05-14</span>
+            </a>
+        </li>
+        <li><a href="#">2017全国休闲农业和乡村旅游大会在安吉召开           <span>2017-05-10</span></a></li>
+        <li><a href="#">周末去哪？来渝北吧！新建成乡村旅游基地等你来耍     <span>2017-04-14</span></a></li>
+        <li><a href="#">高端乡村游在山东落地生根 村民成为乡村旅游有力支持者<span>2017-04-13</span></a></li>
+        <li><a href="#">湖北省2017年美丽乡村建设试点村名单确定共261个      <span>2017-04-13</span></a></li>
+        <li><a href="#">河南美丽乡村怎么建？以“三美起来”为目标           <span>2017-04-04</span></a></li>
+        <li><a href="#">莆田湄州岛多措并举强推进美丽乡村建设               <span>2017-04-01</span></a></li>
+        <li><a href="#">英德将采取PPP模式 五年建成500条美丽乡村            <span>2017-03-14</span></a></li>
+        <li><a href="#">金华全面提升乡村美丽指数                           <span>2017-03-09</span></a></li>
+    </ul>
+    <span class="longyan">
+        龙岩红色旅游促进产业升级
+    </span>
+</div>
+<!--民俗节日-->
+<div class="fes">
+    <!--节日小标题-->
+    <div class="xiaobiaoti">
+        <div class="lfg"></div>
+        <div class="fes1">&nbsp &nbsp &nbsp 民俗节日</div>
+        <div class="rtg"></div>
+    </div>
+    <!--节日上方图片-->
+    <div class="festop">
+        <ul>
+            <li><a href="festi.html"><img src="images/festi_01.jpg"></a></li>
+            <li><a href="festi.html"><img src="images/festi_02.jpg"></a></li>
+
+        </ul>
+        <div class="qunlong" style="position:absolute" >
+        <h4 >群龙游古城</h4>
+         &nbsp&nbsp&nbsp&nbsp&nbsp民俗表演《群龙游古城》。歙县和中国其它历史文
+         化名城一样，对龙的尊重，对龙的崇拜那是放在一切崇
+         拜之首的崇拜。古老的歙县除了有“十户之村不废诵读”
+         之美誉，还有村村均有嬉龙之习俗。村许村镇的板凳龙，
+         杞梓里镇的布龙，还有古歙南乡第一村的昌溪乡舞草龙，
+            它们各具特色。许村的板凳龙。相传很久以前，遇上大
+          旱，东海的一条龙跃出水现，拯救了苍生。
+        </div>
+    </div>
+    <!--节日下方三张图-->
+    <div class="fesbottom">
+        <ul>
+            <li><a href="festi.html"><img src="images/festi_03.jpg"></a></li>
+            <li><a href="festi.html"><img src="images/festi_04.jpg"></a></li>
+            <li><a href="festi.html"><img src="images/festi_05.jpg"></a></li>
+        </ul>
+    </div>
+</div>
+<!--乡觅社区-->
+<div class="commu">
+    <!--社区小标题-->
+    <div class="xiaobiaoti">
+        <div class="lfg"></div>
+        <div class="shequ">&nbsp &nbsp &nbsp 乡觅社区</div>
+        <div class="rtg"></div>
+    </div>
+    <div class="commuzi">
+        <ul>
+            <li class="hotcommu"><a href="commu.html">热门精品贴        </a></li>
+            <li><a href="#">面朝大海，春暖花开，带上家人去感受大海               <span>2017-05-14</span></a></li>
+            <li><a href="#">国事家事天下事，事事关心，不出户知天下           <span>2017-05-13</span></a></li>
+            <li><a href="#">中国的乡土文化渊源流长                           <span>2017-05-13</span></a></li>
+            <li><a href="#">乡村旅游从2.0到3.0                               <span>2017-05-04</span></a></li>
+            <li><a href="#">美丽休闲乡村-六顷地                              <span>2017-05-02</span></a></li>
+            <li><a href="#">花样中国：赏花热激活农业新价值                   <span>2017-05-02</span></a></li>
+            <li><a href="#">美丽乡村旅游建设，我出一份力！                   <span>2017-04-17</span></a></li>
+        </ul>
+    </div>
+    <div class="commutu lf">
+        <img src="images/commu_02.jpg" alt="这是社区图片">
+    </div>
+
+</div>
+<!--预定中心-->
+<div class="book">
+    <!--预定小标题-->
+    <div class="xiaobiaoti">
+        <div class="lfg"></div>
+        <div class="book1">&nbsp &nbsp &nbsp  预定中心</div>
+        <div class="rtg"></div>
+    </div>
+    <div>
+        <img src="images/book_01.jpg">
+    </div>
+</div>
+<!--页脚-->
+<footer class="footer">
+    <div class="footer_top">
+        <ul>
+            <li>
+                <a href="#">客户热线</a>
+                <img class="hao" src="images/phone.png">
+                <div class="lianxi">151-8587-5002<div>
+            </li>
+            <li><b></b>
+                <a href="#">关注我们</a>
+                <img class="hao1" src="images/wechat.png">
+                <img class="hao2" src="images/erweima.png">
+                <div class="lianxi1">微信公众号</div>
+            </li>
+            <li><b></b>
+                <a href="#">在线咨询</a>
+                <img class="hao" src="images/qqlogo.png">
+                <div class="lianxi2">2247312625</div>
+            </li>
+        </ul>
+    </div>
+    <div class="footer_bottom">
+        友情链接：
+        <a href="#">中国美丽乡村网</a>
+        <a href="#">携程</a>
+        <a href="http://www.cthy.com/" style="color: #fff;">中国旅游信息网</a>
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        <a href="#">出游必备</a>&nbsp&nbsp<a href="#">安全事项</a>
+        <br>
+        COPYRIGHT  &copyright 2017 杭州电子科技大学数字媒体与艺术设计学院 浙 ICP备12022451号-1
+    </div>
+</footer>
+<!--回顶部-->
+<div class="_top">
+    TOP
+</div><script>
+    $(function() {
+        $(window).scroll(function() {
+            var _top = $(window).scrollTop();
+            if (_top > 300) {
+                $('._top').fadeIn(600);
+            } else {
+                $('._top').fadeOut(600);
+            }
+        });
+        $("._top").click(function() {
+            $("html,body").animate({
+                scrollTop: 0
+            }, 500);
+        });
+    });</script>
+<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+<script type="text/javascript" src="bootstrap-modal/js/bootstrap-modal.js"></script>
+<script type="text/javascript" src="bootstrap-modal/js/bootstrap-modalmanager.js"></script>
+
+<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+<script type='text/javascript' src='popjs/jquery.modal.js'></script>
+<script type='text/javascript' src='popjs/site.js'></script>
+</body>
+</html>
